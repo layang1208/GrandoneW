@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 50;
+    max-width: 1920px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar img{
+    width:auto;
+    height:40px;
+}
+
+.navbar li a{
+   display: inline-block;
+    float: left;
+}
+
+
+.huronImgContainer img{
+    height: 50%;
+    width: auto;
+}
