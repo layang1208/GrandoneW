@@ -12,115 +12,230 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/grandone logo_2.0-04.png">
 
-    <!-- navbar -->
-    <nav class="navbar navbar-static-top navbar-expand-lg ">
-        <div class="container-fluid">
-            <a href="#home" class="navbar-brand">
-                <img src="./img/grandone logo_2.0-04.png" alt="">
-            </a>
-            <ul class="navbar-nav mr-auto">
-                <li class="active">
-                    <a class="nav-link" href="#home">Home </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#menu">Menu</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
-            <span class="navbar-text">
-                +1 647-350-8688
-            </span>
-            <a class="nav-link" href="#">Order Online</a>
-        </div>
+    <link href="//db.onlinewebfonts.com/c/0523f2813fe88b679addd37b3539660a?family=Gabo+Drive" rel="stylesheet"
+        type="text/css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-    </nav>
+
 
 </head>
 
 <body>
 
     <div class="content">
-
         <!-- home page -->
         <div class="homePage">
-            <div class="huronImgContainer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-6">
-                            50% off won't <br />
-                            end until the <br />
-                            pandemic ends <br />
-                            <button class="btn btn-dark" id="viewMore">View More</button>
+            <div class="heroImg">
+                <!-- navbar -->
+                <nav class="navbar navbar-static-top navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <a href="#home" class="navbar-brand">
+                            <img src="./img/grandone logo_2.0-04.png" alt="">
+                        </a>
+                        <ul class="navbar-nav mr-auto" id="leftSection">
+                            <li class="active">
+                                <a class="nav-link" href="#home">Home </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#menu">Menu</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav justify-content-end" id="rightSection">
+
+                            <li id="phoneNum"> +1 647-350-8688</li>
+                            <li> <button class="btn btn-dark" id="blackBtn">Order Online</button></li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+                <div class="heroImgContainer">
+                    <div class="container-fluid col-md-12">
+                        <div class="row">
+                            <div class="col-md-6" id="detail">
+                                <h1>
+                                    50% off won't <br />
+                                    end until the <br />
+                                    pandemic ends! <br />
+                                </h1>
+
+                                <button class="btn btn-dark" id="blackBtn">View More</button>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./img/grandone_doodle elements-07.png" id="eventImg">
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <img src="./img/grandone_doodle elements-07.png" alt="huronImg" id="huronImg">
-                        </div>
+
                     </div>
                 </div>
+
             </div>
 
-
             <div class="topSales">
-                <div class="col-md-4">
-                    <div class="shrimpSand">
-                        <img src="./img/ShrimpBurger.png" alt="">
-                        <h2 class="dishName">Shrimp Sandwich</h2>
-                        <p class="dishDescrip">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry’s standard.
-                        </p>
-                        <button class="detail">See Detail</button>
+                <div class="post-slider">
+                    <h2 class="slider-title">Top Sales</h2>
+                    <i class="fas fa-chevron-left prev"></i>
+                    <i class="fas fa-chevron-right next"></i>
+
+                    <div class="post-wrapper">
+                        <div class="post" id="shrimp1">
+                            <div class="zoom">
+                                <img src="./img/ShrimpBurger.png" alt="">
+                                <h2 class="dishName">Shrimp Sandwich</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has
+                                    been the industry’s standard.
+                                </p>
+                                <button class="btn btn-light detailBtn" id="">See Detail</button>
+                            </div>
+
+                        </div>
+
+                        <div class="post" id="family1">
+                            <div class="zoom">
+                                <img src="./img/GrandoneFamily.png" alt="">
+                                <h2 class="dishName">Grandone Family <br /> Chicken (8pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has
+                                    been the industry’s standard.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+                            </div>
+
+                        </div>
+                        <div class="post" id="tender1">
+                            <div class="zoom">
+                                <img src="./img/ChickenTender.png" alt="">
+                                <h2 class="dishName">Chicken Tender (5pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has
+                                    been the industry’s standard.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+                            </div>
+
+                        </div>
+                        <div class="post" id="shrimp2">
+                            <div class="zoom">
+                                <img src="./img/ShrimpBurger.png" alt="">
+                                <h2 class="dishName">Shrimp Sandwich</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has
+                                    been the industry’s standard.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+                            </div>
+
+                        </div>
+                        <div class="post" id="family2">
+                            <div class="zoom">
+                                <img src="./img/GrandoneFamily.png" alt="">
+                                <h2 class="dishName">Grandone Family <br /> Chicken (8pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has
+                                    been the industry’s standard.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+                            </div>
+
+                        </div>
+                        <div class="post" id="tender2">
+                            <div class="zoom">
+                                <img src="./img/ChickenTender.png" alt="">
+                                <h2 class="dishName">Chicken Tender (5pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has
+                                    been the industry’s standard.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+
+                            </div>
+
+                        </div>
+
+
                     </div>
+                </div>
+                <!-- Content -->
+                <div class="content clearfix">
+
+
+
 
                 </div>
-                <div class="col-md-4">
-                    <div class="grandoneFamily">
-                        <img src="./img/GrandoneFamily.png" alt="">
-                        <h2 class="dishName">Grandone Family <br/> Chicken (8pc)</h2>
-                        <p class="dishDescrip">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry’s standard.
-                        </p>
-                        <button class="detail">See Detail</button>
-                    </div>
 
-                </div>
-                
-                <div class="col-md-4">
-                    <div class="chickenTender">
-                        <img src="./img/ChickenTender.png" alt="">
-                        <h2 class="dishName">Chicken Tender (5pc)</h2>
-                        <p class="dishDescrip">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry’s standard.
-                        </p>
-                        <button class="detail">See Detail</button>
-                    </div>
-
-                </div>
-
-
+                <button class="btn btn-dark" id="blackBtn">See More</button>
 
             </div>
             <div class="articles">
-                <!-- Eevent-->
+                <!-- Event-->
                 <div class="eventArticle">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="./img/Mask Group 1.png" alt="flyer1">
 
+                        </div>
+
+                        <div class="col-6">
+                            <h2 class="articleTitle">Giveaway Event</h2>
+                            <p class="articleDetail"> Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen
+                                book.</p>
+                            <button class="detail">See Detail</button>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
                 <!-- Blog -->
                 <div class="blogArticle">
+                    <div class="BlogArticle">
+                        <div class="row">
+                            <div class="col-6">
+                                <h2 class="articleTitle">Grandone Blog</h2>
+                                <p class="articleDetail"> Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever
+                                    since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                    make a type specimen book.</p>
+                                <button class="detail">See Detail</button>
+                            </div>
+                            <div class="col-6">
+                                <img src="./img/Mask Group 2.png" alt="flyer2">
 
-
-
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
+                <!-- google map -->
+                <img src="./img/gm.png" alt="">
+
 
 
 
@@ -128,9 +243,67 @@
 
         </div>
 
-
         <footer>
+            <div class="dishes">
+                <div class="row">
+                    <div class="col-3"><img src="./img/f1.png" alt=""></div>
+                    <div class="col-3"><img src="./img/f2.png" alt=""></div>
+                    <div class="col-3"><img src="./img/f3.png" alt=""></div>
+                    <div class="col-3"><img src="./img/f4.png" alt=""></div>
 
+                </div>
+
+            </div>
+            <div class="info">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./img/grandone logo_2.0-04.png" alt="logo">
+                            </div>
+                            <div class="col-6">
+                                <h3 class="fTitle">Address</h3>
+                                <p class="fDetail">16 Mallard Rd Unit A205,
+                                    North York, ON M3B 3N1</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="col-4">
+                        <h3 class="fTitle">Opening Hours</h3>
+                        <div class="row">
+                            <div class="col-8">
+                                Monday <br />
+                                Tuesday — Thursday <br />
+                                Friday — Saturday <br />
+                                Sunday <br />
+                            </div>
+                            <div class="col-4">
+                                Closed <br />
+                                11AM – 9PM <br />
+                                11AM – 11PM <br />
+                                11AM – 6PM <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <button class="fBtn">Enter Your Email</button>
+                        <button class="fBtn">Subscribe</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/grandone_/"><img src="./img/ins.png" alt=""></a>
+                <a href="https://www.facebook.com/Grandone-103707264911475"><img src="./img/faceIcon.png" alt=""></a>
+                <a href=""><img src="./img/twitter.png" alt=""></a>
+
+            </div>
+
+            <p id="claim">Prices are subject to change without notice. ©2021 Grandone Fried Chicken Restaurant</p>
 
 
         </footer>
@@ -139,15 +312,13 @@
 
 
     <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick-carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript" src="./custom.js"></script>
 
 
 

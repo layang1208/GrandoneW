@@ -1,23 +1,212 @@
-*{
-    margin: 0;
-    padding: 50;
+/* * {
     max-width: 1920px;
     box-sizing: border-box;
     text-decoration: none;
+} */
+
+h1 {
+    font-size: 60px;
+    font-family: gabo drive;
 }
 
-.navbar img{
-    width:auto;
-    height:40px;
+h2 {
+    font-size: 40px;
+    font-family: gabo drive;
 }
 
-.navbar li a{
-   display: inline-block;
-    float: left;
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
+img {
+    display: block;
+    /*removes extra space below images (space left in for text descenders) */
+    max-width: 100%;
+    /* fluid width */
+    height: auto;
+    /* maintains aspect ratio */
+    -ms-interpolation-mode: bicubic;
+    /* Helps IE to render images better */
+}
 
-.huronImgContainer img{
-    height: 50%;
+#blackBtn {
+    border-radius: 20px;
+    color: #fff;
+    background-color: black;
+    padding: 0 10px;
+    height: 40px;
+    width: 140px;
+    font-size: 18px;
+    font-family: gabo drive;
+}
+
+.detailBtn {
+    border-radius: 20px;
+    color: #fff;
+    background-color: #EF4323;
+    padding: 0 10px;
+    height: 40px;
+    width: 140px;
+    font-size: 18px;
+    font-family: gabo drive;
+}
+
+.heroImg {
+    background-image: url('./img/Group\ 54.png');
+    background-position: center;
+    background-size: cover;
+    height: 750px;
+    position: relative;
+}
+
+/* navbar */
+
+.navbar .container-fluid {
+    margin-left: 40px;
+}
+
+.navbar img {
     width: auto;
+    height: 60px;
+}
+
+.navbar li a {
+    display: inline-block;
+    float: left;
+    color: black;
+    font-size: 18px;
+    font-family: gabo drive;
+    margin-left: 20px;
+}
+
+.navbar #rightSection li {
+    margin: 0 20px;
+    font-size: 18px;
+    font-family: gabo drive;
+}
+
+.navbar #rightSection #phoneNum {
+    color: white;
+    font-size: 18px;
+    padding: 8px 0;
+}
+
+/* heroImg Container */
+
+.heroImgContainer {
+    margin: 120px 20px 10px 40px;
+}
+
+.heroImgContainer #detail {
+    font-size: 60px;
+    padding-left: 40px;
+}
+
+.heroImgContainer #detail h1 {
+    line-height: 1.1em;
+    margin-top: 50px;
+}
+
+.heroImgContainer #eventImg {
+    height: 70%;
+    width: auto;
+    margin-top: -90px;
+    margin-left: -40px;
+}
+
+/* Top Sales */
+
+.post-slider {
+    position: relative;
+    text-align: center;
+}
+
+.post-slider .slider-title {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.post-slider .prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: #000;
+    cursor: pointer;
+}
+
+.post-slider .next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: #000;
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper {
+    width: 84%;
+    height: 800px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+    width: 70%;
+    height: 60%;
+    margin: 0px 10px;
+    display: inline-block;
+    background: #F3F1E3;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
+
+.slick-slide > div{
+    transform: scale(.5);
+    transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.slick-center > div {
+    transform: scale(1.1);
+}
+
+
+.post  > img{
+    width: 100%;
+    height: auto;
+}
+
+.topSales #blackBtn {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+}
+
+footer .info {}
+
+footer .icons a {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 10px;
+    transition: all ease 0.5s;
+}
+
+footer .icons a:hover {
+    transform: translateY(-10px);
+}
+
+footer p {
+    text-align: center;
 }
