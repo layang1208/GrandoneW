@@ -1,6 +1,6 @@
 
 h1 {
-    font-size: 60px;
+    font-size: 80px;
     font-family: gabo drive;
 }
 
@@ -8,7 +8,10 @@ h2 {
     font-size: 40px;
     font-family: gabo drive;
 }
-
+h4{
+    font-size: 60px;
+    font-family: gabo drive;
+}
 .clearfix::after {
     content: '';
     display: block;
@@ -75,6 +78,12 @@ img {
     font-size: 18px;
     font-family: gabo drive;
     margin-left: 20px;
+    transition: all ease 0.5s;
+    
+}
+.navbar li a:hover{
+    transform: translateY(-2px);
+    color: #EF4323;
 }
 
 .navbar #rightSection li {
@@ -115,9 +124,9 @@ img {
 }
 
 .heroImgContainer #eventImg {
-    height: 70%;
+    height: 80%;
     width: auto;
-    margin-top: -90px;
+    margin-top: -135px;
     margin-left: -40px;
 }
 
@@ -339,9 +348,9 @@ img {
     width:100%;
     margin-top: 10px;
 }
-.pageTitle h1{
+.pageTitle h4{
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
   
 }
 .menu .row{
@@ -373,6 +382,36 @@ img {
 .aboutFooter .container-fluid{
     margin-top: -100px;
 }
+
+
+/* Contact Page */
+ .contactForm{
+    margin: 80px auto 80px 300px;
+    
+    
+}
+.contactForm > div{
+    margin-top:30px
+}
+.contactForm input{
+    width: 650px;
+    background-color: #F3F1E3;
+    border-radius: 25px;
+    border: 6px solid #F3F1E3;
+    height: 50px;
+    outline: none;
+}
+.contactForm button{
+    margin: 30px auto;
+    
+}
+.contactForm  textarea{
+    width: 650px;
+    background-color: #F3F1E3;
+    height: 300px;
+    border-radius: 25px;
+    border: 6px solid #F3F1E3;
+}
 /* footer */
 
 footer {
@@ -381,6 +420,7 @@ footer {
 
 footer .container-fluid{
     background-color: #F3F1E3;
+
 }
 footer .container-fluid .fOrangeBar{
     margin: 50px auto;
@@ -419,9 +459,16 @@ footer .info p {
 footer .info .emailForm input{
     margin-top: 15px;
     margin-bottom: 20px;
-    width: 250px;
+    width: 370px;
+    border: 3px solid #EF4323;
+    border-radius: 25px;
+    background-color: #F3F1E3;
+    
 }
-
+footer .info .emailForm button{
+    width: 370px;
+    color: #F3F1E3;
+}
 footer .info .openHour {
     text-align: left;
     margin: 0 auto;
@@ -452,6 +499,7 @@ footer .icons a {
 }
 footer .icons a:hover {
     transform: translateY(-10px);
+   
     
 }
 footer .iconD{
