@@ -90,6 +90,7 @@ img {
 }
 
 
+
 /* heroImg Container */
 
 .heroImg {
@@ -159,69 +160,37 @@ img {
 .post-slider .post-wrapper {
     width: 84%;
     height: 600px;
-    margin: 0px auto;
+    margin: 30px auto;
     overflow: hidden;
     text-align: center;
     padding: 10px 0px 10px 0px;
 }
 
 .post-slider .post-wrapper .post{
-    width: 70%;
-    height: 100%;
-    text-align: center;
+    padding: 15px;
     display: inline-block;
    
 }
-.post-wrapper .zoom img{
-    border-radius: 15px;
+.post-slider .post-wrapper .zoom{
+    border-radius: 45px;
     box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
     text-align: center;
-    background-color: #F3F1E3;
-    height: 400px;
-    
+    padding: 25px;
 }
-.post-wrapper .shrimp img{
-    border-radius: 15px;
-    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
-    text-align: center;
-    background-color: #F3F1E3;
-    padding-top: 40px;
-    height: 400px;
 
-  
-}
-.post-wrapper .shrimp img{
-    border-radius: 15px;
-    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
-    text-align: center;
-    background-color: #F3F1E3;
-    padding-top: 40px;
-    height: 400px;
-
-  
-}
-.post-wrapper .tender img{
-    border-radius: 15px;
-    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
-    text-align: center;
-    background-color: #F3F1E3;
-    padding-top: 40px;
-    height: 400px;
-
-  
-}
 
 .slick-track > div{
     text-align: center;
 }
 .slick-slide > div{
-    transform: scale(.5);
+    transform: scale(.8);
+    background-color: #F3F1E3;
     transition: .3s cubic-bezier(.4, 0, .2, 1);
 } 
 
-.slick-center > div {
-    transform: scale(0.7);
-    background:#FFC81E ;
+.slick-center .zoom{
+    transform: scale(1);
+    background-color:#FFC81E ;
     border-radius: 15px;
     box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
   
@@ -297,9 +266,11 @@ img {
 /* discount Page */
 
 /* navbar discount */
-.navbar #phoneBlack{
+.content .navbar #phoneNumBlack{
     color:black;
+    padding: 8px 0;
 }
+
 
 /* heroImg discount */
 #discountHeroImg{
@@ -381,7 +352,8 @@ img {
     box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
     text-align: center;
     background-color: #F3F1E3;
-    width: 80%;
+    padding: 50px;
+    margin: 30px 50px;
 }
 
 /* About Page */ 
@@ -504,7 +476,10 @@ footer p {
     margin-top: 15px;
     
 }
-
+footer .container-fluid img{
+    width: 140%;
+    height: auto;
+}
 
 /* footer discountPage */
 

@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $(".post-wrapper").slick({
         centerMode: true,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
         centerPadding: '60px',
         slidesToShow: 3,
         nextArrow: $(".next"),
