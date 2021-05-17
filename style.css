@@ -88,10 +88,7 @@ img {
     font-size: 18px;
     padding: 8px 0;
 }
-/* navbar discount */
-.navbar #phoneNumSales{
-    color:black;
-}
+
 
 /* heroImg Container */
 
@@ -122,16 +119,7 @@ img {
     margin-top: -90px;
     margin-left: -40px;
 }
-/* heroImg discount */
-#discountHeroImg{
-    background-image: url('./img/voucher-03.png');
-    background-size: cover;
-    background-position: center;
-    height: 510px;
-    
-    position: relative;
-    margin: 0 auto;
-}
+
 /* Top Sales */
 
 .post-slider {
@@ -303,6 +291,26 @@ img {
 .blogArticle .articleDetail{
     margin: 40px auto;
 }
+
+
+
+/* discount Page */
+
+/* navbar discount */
+.navbar #phoneBlack{
+    color:black;
+}
+
+/* heroImg discount */
+#discountHeroImg{
+    background-image: url('./img/voucher-03.png');
+    background-size: cover;
+    background-position: center;
+    height: 510px;
+    
+    position: relative;
+    margin: 0 auto;
+}
 /* dicountPage voucher */
 
 .discountDetail #voucherCluster{
@@ -350,6 +358,48 @@ img {
     margin-top: 30px;
     margin-left: 100px;
 
+}
+
+/* Menu Page */
+.pageTitle{
+    background-image: url('./img/titleBgd.png');
+    background-size: cover;
+    height: 120px;
+    width:100%;
+    margin-top: 10px;
+}
+.pageTitle h1{
+    text-align: center;
+    padding-top: 25px;
+  
+}
+.menu .row{
+    margin: 100px 40px;
+}
+.menu .zoom{
+    border-radius: 15px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+    text-align: center;
+    background-color: #F3F1E3;
+    width: 80%;
+}
+
+/* About Page */ 
+
+.storeInfo{
+    margin: 100px auto 0;
+}
+.storeInfo img{
+    margin: 0 auto;
+    height: 60%;
+    width: auto;
+}
+.storeInfo p{
+    padding-top: 40px;
+}
+
+.aboutFooter .container-fluid{
+    margin-top: -100px;
 }
 /* footer */
 
