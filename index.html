@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grandone</title>
+    <title>Grandone Chicken</title>
+    <meta name="description" content="Grandone Toronto Chicken Restaurant">
+    <meta name="Keywords"
+        content="fried chicken, grandone toronto, grandone chicken restaurant, toronto fried chicken restaurant, chicken restaurant, fast food">
+
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -31,9 +35,15 @@
                 <!-- navbar -->
                 <nav class="navbar navbar-static-top navbar-expand-lg ">
                     <div class="container-fluid">
-                        <a href="./index.html" class="navbar-brand">
-                            <img src="./img/grandone logo_2.0-04.png" alt="">
-                        </a>
+                        <div class="logo">
+                            <h1>
+                                <a href="./index.html" class="navbar-brand" title="Grandone Chicken">
+                                    <img src="./img/grandone logo_2.0-04.png" alt="">
+                                    Grandone Chicken
+                                </a>
+                            </h1>
+                        </div>
+
                         <ul class="navbar-nav mr-auto" id="leftSection">
                             <li class="active">
                                 <a class="nav-link" href="./index.html">Home </a>
@@ -45,7 +55,7 @@
                                 <a class="nav-link" href="./about.html">About</a>
                             </li>
                             <li>
-                                <a class="nav-link"  href="./contact.html">Contact</a>
+                                <a class="nav-link" href="./contact.html">Contact</a>
                             </li>
 
                         </ul>
@@ -93,9 +103,9 @@
                         <div class="post shrimp" id="">
                             <div class="zoom">
                                 <img src="./img/ShrimpBurger.png" alt="">
-                                <h2 class="dishName">Shrimp <br/> Sandwich</h2>
+                                <h2 class="dishName">Shrimp <br /> Sandwich</h2>
                                 <p class="dishDescrip">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                                 <button class="btn btn-light detailBtn" id="">See Detail</button>
                             </div>
@@ -106,7 +116,7 @@
                                 <img src="./img/GrandoneFamily.png" alt="">
                                 <h2 class="dishName">Family <br /> Chicken (8pc)</h2>
                                 <p class="dishDescrip">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                                 <button class="btn btn-light detailBtn">See Detail</button>
 
@@ -116,9 +126,9 @@
                         <div class="post tender" id="">
                             <div class="zoom">
                                 <img src="./img/ChickenTender.png" alt="">
-                                <h2 class="dishName">Chicken <br/> Tender (5pc)</h2>
+                                <h2 class="dishName">Chicken <br /> Tender (5pc)</h2>
                                 <p class="dishDescrip">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                                 <button class="btn btn-light detailBtn">See Detail</button>
 
@@ -128,9 +138,9 @@
                         <div class="post shrimp" id="">
                             <div class="zoom">
                                 <img src="./img/ShrimpBurger.png" alt="">
-                                <h2 class="dishName">Shrimp <br/> Sandwich</h2>
+                                <h2 class="dishName">Shrimp <br /> Sandwich</h2>
                                 <p class="dishDescrip">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                                 <button class="btn btn-light detailBtn">See Detail</button>
                             </div>
@@ -142,7 +152,7 @@
                                 <img src="./img/GrandoneFamily.png" alt="">
                                 <h2 class="dishName">Family <br /> Chicken (8pc)</h2>
                                 <p class="dishDescrip">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                                 <button class="btn btn-light detailBtn">See Detail</button>
 
@@ -153,9 +163,9 @@
                         <div class="post tender" id="">
                             <div class="zoom">
                                 <img src="./img/ChickenTender.png" alt="">
-                                <h2 class="dishName">Chicken <br/>  Tender (5pc)</h2>
+                                <h2 class="dishName">Chicken <br /> Tender (5pc)</h2>
                                 <p class="dishDescrip">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                 </p>
                                 <button class="btn btn-light detailBtn">See Detail</button>
 
@@ -343,7 +353,41 @@
     <!-- slick-carousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script type="text/javascript" src="./custom.js"></script>
+    <script type="text/javascript">$(document).ready(function () {
+            $(".post-wrapper").slick({
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                nextArrow: $(".next"),
+                prevArrow: $(".prev"),
+                responsive: [
+
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+
+                ]
+            });
+
+        });
+    </script>
 
 
 

@@ -66,9 +66,12 @@ img {
     margin-left: 40px;
 }
 
-.navbar img {
+.navbar .logo img {
     width: auto;
     height: 60px;
+}
+.navbar .logo a{
+    font-size: 0;
 }
 
 .navbar li a {
