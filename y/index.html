@@ -1,89 +1,420 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.7.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.7.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.7.0/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandone Chicken</title>
+    <meta name="description" content="Grandone Toronto Chicken Restaurant">
+    <meta name="Keywords"
+        content="fried chicken, grandone toronto, grandone chicken restaurant, toronto fried chicken restaurant, chicken restaurant, fast food">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/grandone logo_2.0-04.png">
+
+    <link href="//db.onlinewebfonts.com/c/0523f2813fe88b679addd37b3539660a?family=Gabo+Drive" rel="stylesheet"
+        type="text/css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <div class="content">
+        <!-- home page -->
+        <div class="homePage">
+            <div class="heroImg">
+                <!-- navbar -->
+                <nav class="navbar navbar-static-top navbar-expand-lg ">
+                    <div class="container-fluid">
+                        <div class="logo">
+                            <h1>
+                                <a href="./index.html" class="navbar-brand" title="Grandone Chicken">
+                                    <img src="./img/grandone logo_2.0-04.png" alt="grandoneLogo">
+                                    Grandone Chicken
+                                </a>
+                            </h1>
+                        </div>
+
+                        <ul class="navbar-nav mr-auto" id="leftSection">
+                            <li class="active">
+                                <a class="nav-link" href="./index.html">Home </a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./Menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+
+                        </ul>
+                        <ul class="navbar-nav justify-content-end" id="rightSection">
+
+                            <li id="phoneNum"> +1 647-350-8688</li>
+                            <li> <button class="btn btn-dark blackBtn" id="">Order Online</button></li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+                <div class="heroImgContainer">
+                    <div class="container-fluid col-md-12">
+                        <div class="row">
+                            <div class="col-md-6" id="detail">
+                                <h1>
+                                    50% off won't <br />
+                                    end until the <br />
+                                    pandemic ends! <br />
+                                </h1>
+                                <a href="./discount.html" target="_blank"><button class="btn btn-dark blackBtn"
+                                        id="">View More</button></a>
+
+                            </div>
+                            <div class="col-md-6">
+                                <img src="./img/grandone_doodle elements-07.png" id="eventImg">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="topSales">
+                <div class="post-slider">
+                    <h2 class="slider-title">Top <span>Sales</span> </h2>
+                    <div class="blackBar"></div>
+                    <i class="fas fa-chevron-left prev"></i>
+                    <i class="fas fa-chevron-right next"></i>
+
+                    <div class="post-wrapper">
+                        <div class="post shrimp" id="">
+                            <div class="zoom">
+                                <img src="./img/ShrimpBurger.png" alt="">
+                                <h2 class="dishName">Shrimp <br /> Sandwich</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <button class="btn btn-light detailBtn" id="">See Detail</button>
+                            </div>
+                        </div>
+
+                        <div class="post family">
+                            <div class="zoom">
+                                <img src="./img/GrandoneFamily.png" alt="">
+                                <h2 class="dishName">Family <br /> Chicken (8pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+
+                            </div>
+
+                        </div>
+                        <div class="post tender" id="">
+                            <div class="zoom">
+                                <img src="./img/ChickenTender.png" alt="">
+                                <h2 class="dishName">Chicken <br /> Tender (5pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+
+                            </div>
+
+                        </div>
+                        <div class="post shrimp" id="">
+                            <div class="zoom">
+                                <img src="./img/ShrimpBurger.png" alt="">
+                                <h2 class="dishName">Shrimp <br /> Sandwich</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+                            </div>
+
+
+                        </div>
+                        <div class="post family" id="">
+                            <div class="zoom">
+                                <img src="./img/GrandoneFamily.png" alt="">
+                                <h2 class="dishName">Family <br /> Chicken (8pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+
+                            </div>
+
+
+                        </div>
+                        <div class="post tender" id="">
+                            <div class="zoom">
+                                <img src="./img/ChickenTender.png" alt="">
+                                <h2 class="dishName">Chicken <br /> Tender (5pc)</h2>
+                                <p class="dishDescrip">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <button class="btn btn-light detailBtn">See Detail</button>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    <a href="./Menu.html" target="_blank"> <button class="btn btn-dark blackBtn" id="">See
+                            More</button></a>
+
+                </div>
+
+
+
+
+            </div>
+            <!-- Content -->
+            <div class="content clearfix">
+
+            </div>
+            <div class="articles">
+                <!-- Event-->
+                <div class="eventArticle">
+                    <div class="row">
+                        <div class="col-6 image">
+                            <img src="./img/Mask Group 1.png" alt="flyer1">
+
+                        </div>
+
+                        <div class="col-6 content">
+                            <h2 class="articleTitle">Giveaway <span>Event</span> </h2>
+                            <div class="blackBar"></div>
+                            <p class="articleDetail"> Lorem Ipsum is simply dummy text of the printing and <br />
+                                typesetting industry. Lorem Ipsum has been the industry’s <br /> standard dummy text
+                                ever since the 1500s, when an unknown <br /> printer took a galley of type and scrambled
+                                it
+                                to
+                                make a type <br /> specimen book.</p>
+                            <a href="./discount.html" target="_blank"><button class="btn btn-light detailBtn">See
+                                    Detail</button></a>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Blog -->
+                <div class="blogArticle">
+                    <div class="BlogArticle">
+                        <div class="row ">
+                            <div class="col-6 content">
+                                <h2 class="articleTitle">Grandone <span>Blog</span> </h2>
+                                <div class="blackBar"></div>
+                                <p class="articleDetail"> Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting<br />
+                                    industry. Lorem Ipsum has been the industry’s standard dummy<br /> text ever since
+                                    the
+                                    1500s,
+                                    when an unknown printer took a galley <br />of type and scrambled it to make a type
+                                    specimen
+                                    book.</p>
+
+
+                                <button class="btn btn-light detailBtn" href="/discount">See Detail</button>
+                            </div>
+                            <div class="col-6">
+                                <img src="./img/Mask Group 2.png" alt="flyer2">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="container-fluid">
+                <!-- google map -->
+                <img src="./img/gm.png" alt="">
+
+                <div class="dishes">
+                    <div class="fOrangeBar"></div>
+                    <div class="row">
+                        <div class="col-3"><img src="./img/f1.png" alt=""></div>
+                        <div class="col-3"><img src="./img/f2.png" alt=""></div>
+                        <div class="col-3"><img src="./img/f3.png" alt=""></div>
+                        <div class="col-3"><img src="./img/f4.png" alt=""></div>
+
+                    </div>
+                    <div class="fBlackBar"></div>
+                </div>
+
+
+                <div class="info">
+                    <div class="row">
+                        <div class="col-4 address">
+                            <div class="row">
+                                <div class="col-6 ">
+                                    <img src="./img/grandone logo_2.0-04.png" alt="logo">
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="fTitle">Address</h3>
+                                    <p class="fDetail">16 Mallard Rd Unit A205,
+                                        North York, ON M3B 3N1</p>
+                                    <h3 class="fTitle">Contact</h3>
+                                    <p class="fDetail">+1 647-350-8688</p>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-4 openHour">
+                            <h3 class="fTitle">Opening Hours</h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    Monday <br />
+                                    Tuesday — Thursday <br />
+                                    Friday — Saturday <br />
+                                    Sunday <br />
+                                </div>
+                                <div class="col-6">
+                                    Closed <br />
+                                    11AM – 9PM <br />
+                                    11AM – 11PM <br />
+                                    11AM – 6PM <br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 emailForm">
+                            <h3 class="fTitle">Subscribe Us</h3>
+                            <input type="text" class="form-control" placeholder="Your Email"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <button class="btn detailBtn" type="button">Subscribe</button>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="icons">
+                    <div class="lOrangeBar"></div>
+                    <div class="iconD">
+                        <a href="https://www.instagram.com/grandone_/" target="_blank" rel="noopener noreferrer"><img
+                                src="./img/ins.png" alt=""></a>
+                        <a href="https://www.facebook.com/Grandone-103707264911475" target="_blank"
+                            rel="noopener noreferrer"><img src="./img/faceIcon.png" alt=""></a>
+                        <a href=""><img src="./img/twitter.png" alt=""></a>
+                    </div>
+
+                    <div class="rOrangeBar"></div>
+
+                </div>
+
+                <p id="claim">Prices are subject to change without notice. ©2021 Grandone Fried Chicken Restaurant</p>
+
+
+
+            </div>
+
+        </footer>
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
+    <!-- JS -->
+
+    <!-- jquery link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slick-carousel -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">$(document).ready(function () {
+            $(".post-wrapper").slick({
+                centerMode: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                nextArrow: $(".next"),
+                prevArrow: $(".prev"),
+                responsive: [
+
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+
+                ]
+            });
+
+        });
     </script>
-  </body>
+
+
+
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyC7iqgPys9ZHBGFFXIh9wdLiqP-h8yeIhc",
+    authDomain: "grandone.firebaseapp.com",
+    projectId: "grandone",
+    storageBucket: "grandone.appspot.com",
+    messagingSenderId: "501188533481",
+    appId: "1:501188533481:web:1dcf919b46c71fe6ac6478",
+    measurementId: "G-V6SXS1VWG2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 </html>
