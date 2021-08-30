@@ -1,0 +1,28 @@
+// hero image container
+.heroImg {
+  background-image: url("../img/Group\ 54.png");
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  position: relative;
+}
+.heroImgContainer {
+  margin: 120px 20px 10px 40px;
+}
+
+.heroImgContainer #detail {
+  font-size: 60px;
+  padding-left: 40px;
+}
+
+.heroImgContainer #detail h1 {
+  line-height: 1.1em;
+  margin-top: 50px;
+}
+
+.heroImgContainer #eventImg {
+  height: 80%;
+  width: auto;
+  margin-top: -135px;
+  margin-left: -40px;
+}

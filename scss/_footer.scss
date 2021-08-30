@@ -1,0 +1,106 @@
+/* footer */
+@import "config";
+footer {
+  text-align: center;
+}
+
+footer .container-fluid {
+  background-color: $terColor;
+}
+footer .container-fluid .fOrangeBar {
+  margin: 50px auto;
+  width: 60px;
+  height: 10px;
+  background-color: $priColor;
+  position: relative;
+}
+
+footer .container-fluid .fBlackBar {
+  margin: 50px auto;
+  width: 60px;
+  height: 10px;
+  background-color: $blackColor;
+  position: relative;
+}
+
+footer .dishes {
+  margin: 100px 40px;
+}
+footer .fTitle {
+  font-family: $priFont;
+}
+footer .info img {
+  width: 80%;
+  height: auto;
+}
+footer .info > .row {
+  text-align: left;
+  margin: 20px 40px;
+}
+footer .info p {
+  text-align: left;
+}
+footer .info .emailForm input {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 370px;
+  border: 3px solid $priColor;
+  border-radius: 25px;
+  background-color: $terColor;
+}
+footer .info .emailForm button {
+  width: 370px;
+  color: $terColor;
+}
+footer .info .openHour {
+  text-align: left;
+  margin: 0 auto;
+}
+
+footer .icons .lOrangeBar {
+  left: 30px;
+  width: 380px;
+  height: 3px;
+  background-color: $priColor;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+footer .icons a {
+  display: inline-block;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 15px;
+  transition: all ease 0.5s;
+}
+footer .icons a:hover {
+  transform: translateY(-10px);
+}
+footer .iconD {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+footer .icons .rOrangeBar {
+  right: 30px;
+  width: 380px;
+  height: 3px;
+  background-color: $priColor;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 15px;
+}
+footer .container-fluid img {
+  width: 140%;
+  height: auto;
+}

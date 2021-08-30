@@ -1,0 +1,75 @@
+@import "config";
+
+/* Top Sales Slider */
+%sequenceStyle {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: $blackColor;
+  cursor: pointer;
+}
+
+.post-slider {
+  position: relative;
+  text-align: center;
+}
+
+.post-slider .slider-title {
+  margin-top: 60px;
+  text-align: center;
+}
+.post-slider .blackBar {
+  margin: 0 auto;
+}
+// .post-slider .blackBtn {
+//   text-align: center;
+//   margin-top: 40px;
+// }
+.post-slider h2 span {
+  color: $priColor;
+}
+
+.post-slider .prev {
+  @extend %sequenceStyle;
+}
+
+.post-slider .next {
+  @extend %sequenceStyle;
+}
+
+.post-slider .post-wrapper {
+  width: 84%;
+  height: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post {
+  padding: 15px;
+  display: inline-block;
+}
+.post-slider .post-wrapper .zoom {
+  border-radius: 45px;
+  box-shadow: 1rem 1rem 1rem -1rem $boxShadowColor;
+  text-align: center;
+  padding: 25px;
+}
+
+.slick-track > div {
+  text-align: center;
+}
+.slick-slide > div {
+  transform: scale(0.8);
+  background-color: $terColor;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slick-center .zoom {
+  transform: scale(1);
+  background-color: $secColor;
+  border-radius: 15px;
+  box-shadow: 1rem 1rem 1rem -1rem $boxShadowColor;
+}

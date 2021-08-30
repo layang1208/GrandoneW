@@ -1,0 +1,54 @@
+@import "config";
+/* articles */
+
+/* event articles */
+.articles {
+  margin: 160px auto;
+  text-align: center;
+}
+.articles .eventArticle img {
+  width: 80%;
+  margin: auto auto;
+}
+.eventArticle .blackBar {
+  text-align: left;
+}
+
+.articles .eventArticle .content {
+  text-align: left;
+  margin: auto auto;
+  padding-left: 40px;
+}
+
+.articles .eventArticle .content span {
+  color: $priColor;
+}
+.eventArticle .articleDetail {
+  margin: 40px auto;
+}
+
+/* blog articles */
+.articles .blogArticle {
+  margin: 160px auto;
+  text-align: center;
+}
+
+.blogArticle img {
+  width: 80%;
+  margin: auto auto;
+}
+.blogArticle .blackBar {
+  text-align: left;
+}
+.blogArticle .content {
+  text-align: left;
+  margin: auto auto;
+  padding-left: 100px;
+}
+
+.blogArticle .content span {
+  color: $priColor;
+}
+.blogArticle .articleDetail {
+  margin: 40px auto;
+}

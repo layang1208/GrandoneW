@@ -1,0 +1,49 @@
+/* navbar */
+@import "config";
+
+.navbar {
+  .container-fluid {
+    margin-left: 40px;
+  }
+  .logo {
+    img {
+      width: auto;
+      height: 60px;
+    }
+    a {
+      font-size: 0;
+    }
+  }
+  li {
+    a {
+      /* display: inline-block; */
+      float: left;
+      color: $blackColor;
+      font-size: $quaFontSize;
+      font-family: $priFont;
+      margin-left: 20px;
+      transition: all ease 0.5s;
+    }
+    a:hover {
+      transform: translateY(-2px);
+      color: $priColor;
+    }
+  }
+
+  #rightSection {
+    li {
+      margin: 0 20px;
+      font-size: $quaFontSize;
+      font-family: $priFont;
+    }
+    #phoneNum {
+      color: $whiteColor;
+      font-size: $quaFontSize;
+      padding: 8px 0;
+    }
+  }
+  #phoneNumBlack {
+    color: black;
+    padding: 8px 0;
+  }
+}

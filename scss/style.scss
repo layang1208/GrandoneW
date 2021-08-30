@@ -1,0 +1,23 @@
+@import "config";
+@import "utilities";
+
+@import "button";
+@import "bars";
+@import "navbar";
+@import "footer";
+
+@import "heroImage";
+@import "slider";
+@import "articles";
+@import "pageTitle";
+
+@import "discount";
+@import "menu";
+@import "contact";
+@import "about";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

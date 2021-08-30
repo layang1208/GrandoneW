@@ -1,0 +1,25 @@
+/* Contact Page */
+.contactForm {
+  margin: 80px auto 80px 300px;
+}
+.contactForm > div {
+  margin-top: 30px;
+}
+.contactForm input {
+  width: 650px;
+  background-color: #f3f1e3;
+  border-radius: 25px;
+  border: 6px solid #f3f1e3;
+  height: 50px;
+  outline: none;
+}
+.contactForm button {
+  margin: 30px auto;
+}
+.contactForm textarea {
+  width: 650px;
+  background-color: #f3f1e3;
+  height: 300px;
+  border-radius: 25px;
+  border: 6px solid #f3f1e3;
+}

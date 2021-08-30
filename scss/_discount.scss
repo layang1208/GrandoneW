@@ -1,0 +1,44 @@
+/* dicountPage voucher */
+
+.discountDetail #voucherCluster {
+  margin: 80px auto;
+  height: auto;
+  width: 50%;
+}
+.discountDetail .voucherDetail .detail p {
+  font-size: 14px;
+}
+.discountDetail .voucherDetail .lDrawing img {
+  margin: 0 auto;
+  height: auto;
+  width: 50%;
+}
+.discountDetail .voucherDetail .rDrawing img {
+  margin: 0 auto;
+  height: auto;
+  width: 40%;
+}
+/* discountPage event */
+.discountDetail .discountEvent {
+  margin: 120px auto;
+}
+.discountEvent img {
+  margin: 0 auto;
+  height: auto;
+  width: 70%;
+}
+.discountEvent .detail {
+  background-image: url("./img/dialogBgd.png");
+  background-size: 100% auto;
+  right: 10px;
+  background-repeat: no-repeat;
+}
+.discountEvent .title {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+.discountEvent p {
+  margin-top: 30px;
+  margin-left: 100px;
+}

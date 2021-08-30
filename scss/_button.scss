@@ -1,0 +1,22 @@
+@import "../scss/config";
+
+%btn {
+  border-radius: 20px;
+  padding: 0 10px;
+  height: 40px;
+  width: 140px;
+  font-size: 18px;
+  font-family: $priFont;
+}
+
+.blackBtn {
+  @extend %btn;
+  color: $whiteColor;
+  background-color: $blackColor;
+}
+
+.detailBtn {
+  @extend %btn;
+  color: $whiteColor;
+  background-color: $priColor;
+}

@@ -1,0 +1,26 @@
+@import "config";
+
+img {
+  display: block;
+  /*removes extra space below images (space left in for text descenders) */
+  max-width: 100%;
+  /* fluid width */
+  height: auto;
+  /* maintains aspect ratio */
+  -ms-interpolation-mode: bicubic;
+  /* Helps IE to render images better */
+}
+
+h1 {
+  font-size: $priFontSize;
+  font-family: $priFont;
+}
+
+h2 {
+  font-size: $secFontSize;
+  font-family: $priFont;
+}
+h3 {
+  font-size: $terFontSize;
+  font-family: $priFont;
+}
