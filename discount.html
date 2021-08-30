@@ -1,215 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discount</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./img/grandone logo_2.0-04.png">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/grandone logo_2.0-04.png" />
 
-    <link href="//db.onlinewebfonts.com/c/0523f2813fe88b679addd37b3539660a?family=Gabo+Drive" rel="stylesheet"
-        type="text/css" />
+    <link
+      href="//db.onlinewebfonts.com/c/0523f2813fe88b679addd37b3539660a?family=Gabo+Drive"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="content">
+      <!-- navbar -->
+      <nav class="navbar navbar-static-top navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo">
+            <h1>
+              <a href="./index.html" class="navbar-brand">
+                <img src="./img/grandone logo_2.0-04.png" alt="" />
+              </a>
+            </h1>
+          </div>
+          <ul class="navbar-nav mr-auto" id="leftSection">
+            <li class="active">
+              <a class="nav-link" href="./index.html">Home </a>
+            </li>
+            <li>
+              <a class="nav-link" href="./Menu.html">Menu</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end" id="rightSection">
+            <li id="phoneNumBlack">+1 647-350-8688</li>
+            <li>
+              <button class="btn btn-light detailBtn" id="">
+                Order Online
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-        <!-- navbar -->
-        <nav class="navbar navbar-static-top navbar-expand-lg ">
-            <div class="container-fluid">
-                <div class="logo">
-                    <h1>
-                        <a href="./index.html" class="navbar-brand">
-                            <img src="./img/grandone logo_2.0-04.png" alt="">
-                        </a>
-                    </h1>
-                </div>
-                <ul class="navbar-nav mr-auto" id="leftSection">
-                    <li class="active">
-                        <a class="nav-link"  href="./index.html">Home </a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="./Menu.html">Menu</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-link"  href="./contact.html">Contact</a>
-                    </li>
+      <div class="heroImage" id="discountHeroImg"></div>
 
-                </ul>
-                <ul class="navbar-nav justify-content-end" id="rightSection">
-
-                    <li id="phoneNumBlack"> +1 647-350-8688</li>
-                    <li> <button class="btn btn-light detailBtn" id="">Order Online</button></li>
-
-                </ul>
-
-            </div>
-
-        </nav>
-
-        <div class="heroImage" id="discountHeroImg"></div>
-
-        <div class="discountDetail">
-            <div class="row">
-                <img id="voucherCluster" src="./img/voucherCluster.png" alt="">
-            </div>
-
-            <div class="voucherDetail">
-                <div class="row">
-                    <div class="col-4 lDrawing">
-                        <img src="./img/Ddrawing1.png" alt="">
-                    </div>
-                    <div class="col-4 detail">
-                        <p>
-                            The seven discount vouchers cover all your needs, which are: <br />
-                            1. Order over $20 before tax, get $4 off<br />
-                            2. Order over $45 before tax, get $8 off<br />
-                            3. Order over $10 before tax, get 15% off<br />
-                            4. Order over $30 before tax, get a free shrimp sandwich<br />
-                            5. Order any item, upgrade to combo (Except family chicken and sides)<br />
-                            6. Buy any combo, spend only $2 get fried cod fillets or fried calamari rings<br />
-                            7. Order junior chicken, get 1 more piece, or order family chicken get 2 more pieces<br />
-                        </p>
-
-                    </div>
-                    <div class="col-4 rDrawing">
-                        <img src="./img/Ddrawing2.png" alt="">
-                    </div>
-
-                </div>
-
-
-            </div>
-
-            <div class="discountEvent">
-                <div class="row">
-                    <div class="col-5 ">
-                        <img src="./img/Ddrawing3.png" alt="">
-                    </div>
-                    <div class="col-7 detail">
-                        <div class="title">
-                            <h1 class="eventDetail">Event Detail</h1>
-                                <div class="blackBar"></div>
-                        </div>
-                        
-                        <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have
-                            suffered alteration in some form, by injected humour, or randomised words which don’t look
-                            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-                            sure there isn’t anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                            generators on the Internet tend to repeat predefined chunks as necessary, making this the
-                            first true generator on the Internet.
-                        </p>
-
-                    </div>
-                </div>
-
-
-
-            </div>
-
+      <div class="discountDetail">
+        <div class="row">
+          <img id="voucherCluster" src="./img/voucherCluster.png" alt="" />
         </div>
 
+        <div class="voucherDetail">
+          <div class="row">
+            <div class="col-4 lDrawing">
+              <img src="./img/Ddrawing1.png" alt="" />
+            </div>
+            <div class="col-4 detail">
+              <p>
+                The seven discount vouchers cover all your needs, which are:
+                <br />
+                1. Order over $20 before tax, get $4 off<br />
+                2. Order over $45 before tax, get $8 off<br />
+                3. Order over $10 before tax, get 15% off<br />
+                4. Order over $30 before tax, get a free shrimp sandwich<br />
+                5. Order any item, upgrade to combo (Except family chicken and
+                sides)<br />
+                6. Buy any combo, spend only $2 get fried cod fillets or fried
+                calamari rings<br />
+                7. Order junior chicken, get 1 more piece, or order family
+                chicken get 2 more pieces<br />
+              </p>
+            </div>
+            <div class="col-4 rDrawing">
+              <img src="./img/Ddrawing2.png" alt="" />
+            </div>
+          </div>
+        </div>
 
+        <div class="discountEvent">
+          <div class="row">
+            <div class="col-5">
+              <img src="./img/Ddrawing3.png" alt="" />
+            </div>
+            <div class="col-7 detail">
+              <div class="title">
+                <h1 class="eventDetail">Event Detail</h1>
+                <div class="blackBar"></div>
+              </div>
+
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don’t look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn’t anything embarrassing
+                hidden in the middle of text. All the Lorem Ipsum generators on
+                the Internet tend to repeat predefined chunks as necessary,
+                making this the first true generator on the Internet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer id="dFooter">
-
-        <div class="container-fluid" >
-            <!-- google map -->
-            <img src="./img/gm.png" alt="">
-            <div class="dishes">
-                <div class="fOrangeBar"></div>
-                <div class="row">
-                    <div class="col-3"><img src="./img/f1.png" alt=""></div>
-                    <div class="col-3"><img src="./img/f2.png" alt=""></div>
-                    <div class="col-3"><img src="./img/f3.png" alt=""></div>
-                    <div class="col-3"><img src="./img/f4.png" alt=""></div>
-
-                </div>
-                <div class="fBlackBar"></div>
-            </div>
-
-
-            <div class="info">
-                <div class="row">
-                    <div class="col-4 address">
-                        <div class="row">
-                            <div class="col-6 ">
-                                <img src="./img/grandone logo_2.0-04.png" alt="logo">
-                            </div>
-                            <div class="col-6">
-                                <h3 class="fTitle">Address</h3>
-                                <p class="fDetail">16 Mallard Rd Unit A205,
-                                    North York, ON M3B 3N1</p>
-                                <h3 class="fTitle">Contact</h3>
-                                <p class="fDetail">+1 647-350-8688</p>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                    <div class="col-4 openHour">
-                        <h3 class="fTitle">Opening Hours</h3>
-                        <div class="row">
-                            <div class="col-6">
-                                Monday <br />
-                                Tuesday — Thursday <br />
-                                Friday — Saturday <br />
-                                Sunday <br />
-                            </div>
-                            <div class="col-6">
-                                Closed <br />
-                                11AM – 9PM <br />
-                                11AM – 11PM <br />
-                                11AM – 6PM <br />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 emailForm">
-                        <h3 class="fTitle">Subscribe Us</h3>
-                        <input type="text" class="form-control" placeholder="Your Email"
-                            aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        <button class="btn detailBtn" type="button">Subscribe</button>
-
-
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="icons">
-                <div class="lOrangeBar"></div>
-                <div class="iconD">
-                    <a href="https://www.instagram.com/grandone_/" target="_blank" rel="noopener noreferrer"><img src="./img/ins.png" alt=""></a>
-                    <a href="https://www.facebook.com/Grandone-103707264911475" target="_blank" rel="noopener noreferrer"><img src="./img/faceIcon.png"
-                            alt=""></a>
-                    <a href=""><img src="./img/twitter.png" alt=""></a>
-                </div>
-
-                <div class="rOrangeBar"></div>
-
-            </div>
-
-            <p id="claim">Prices are subject to change without notice. ©2021 Grandone Fried Chicken Restaurant</p>
-
-
-
+      <div class="container-fluid">
+        <!-- google map -->
+        <img src="./img/gm.png" alt="" />
+        <div class="dishes">
+          <div class="fOrangeBar"></div>
+          <div class="row">
+            <div class="col-3"><img src="./img/f1.png" alt="" /></div>
+            <div class="col-3"><img src="./img/f2.png" alt="" /></div>
+            <div class="col-3"><img src="./img/f3.png" alt="" /></div>
+            <div class="col-3"><img src="./img/f4.png" alt="" /></div>
+          </div>
+          <div class="fBlackBar"></div>
         </div>
 
-    </footer>
-</body>
+        <div class="info">
+          <div class="row">
+            <div class="col-4 address">
+              <div class="row">
+                <div class="col-6">
+                  <img src="./img/grandone logo_2.0-04.png" alt="logo" />
+                </div>
+                <div class="col-6">
+                  <h3 class="fTitle">Address</h3>
+                  <p class="fDetail">
+                    16 Mallard Rd Unit A205, North York, ON M3B 3N1
+                  </p>
+                  <h3 class="fTitle">Contact</h3>
+                  <p class="fDetail">+1 647-350-8688</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 openHour">
+              <h3 class="fTitle">Opening Hours</h3>
+              <div class="row">
+                <div class="col-6">
+                  Monday <br />
+                  Tuesday — Thursday <br />
+                  Friday — Saturday <br />
+                  Sunday <br />
+                </div>
+                <div class="col-6">
+                  Closed <br />
+                  11AM – 9PM <br />
+                  11AM – 11PM <br />
+                  11AM – 6PM <br />
+                </div>
+              </div>
+            </div>
+            <div class="col-4 emailForm">
+              <h3 class="fTitle">Subscribe Us</h3>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <button class="btn detailBtn" type="button">Subscribe</button>
+            </div>
+          </div>
+        </div>
 
+        <div class="icons">
+          <div class="lOrangeBar"></div>
+          <div class="iconD">
+            <a
+              href="https://www.instagram.com/grandone_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./img/ins.png" alt=""
+            /></a>
+            <a
+              href="https://www.facebook.com/Grandone-103707264911475"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img src="./img/faceIcon.png" alt=""
+            /></a>
+            <a href=""><img src="./img/twitter.png" alt="" /></a>
+          </div>
+
+          <div class="rOrangeBar"></div>
+        </div>
+
+        <p id="claim">
+          Prices are subject to change without notice. ©2021 Grandone Fried
+          Chicken Restaurant
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,539 +1,503 @@
-
 h1 {
-    font-size: 80px;
-    font-family: gabo drive;
+  font-size: 80px;
+  font-family: gabo drive;
 }
 
 h2 {
-    font-size: 40px;
-    font-family: gabo drive;
+  font-size: 40px;
+  font-family: gabo drive;
 }
-h4{
+/* h4{
     font-size: 60px;
     font-family: gabo drive;
-}
-.clearfix::after {
+} */
+/* .clearfix::after {
     content: '';
     display: block;
     clear: both;
-}
+} */
 
 img {
-    display: block;
-    /*removes extra space below images (space left in for text descenders) */
-    max-width: 100%;
-    /* fluid width */
-    height: auto;
-    /* maintains aspect ratio */
-    -ms-interpolation-mode: bicubic;
-    /* Helps IE to render images better */
+  display: block;
+  /*removes extra space below images (space left in for text descenders) */
+  max-width: 100%;
+  /* fluid width */
+  height: auto;
+  /* maintains aspect ratio */
+  -ms-interpolation-mode: bicubic;
+  /* Helps IE to render images better */
 }
 
 .blackBtn {
-    border-radius: 20px;
-    color: #fff;
-    background-color: black;
-    padding: 0 10px;
-    height: 40px;
-    width: 140px;
-    font-size: 18px;
-    font-family: gabo drive;
+  border-radius: 20px;
+  color: #fff;
+  background-color: black;
+  padding: 0 10px;
+  height: 40px;
+  width: 140px;
+  font-size: 18px;
+  font-family: gabo drive;
 }
 
 .detailBtn {
-    border-radius: 20px;
-    color: #fff;
-    background-color: #EF4323;
-    padding: 0 10px;
-    height: 40px;
-    width: 140px;
-    font-size: 18px;
-    font-family: gabo drive;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #ef4323;
+  padding: 0 10px;
+  height: 40px;
+  width: 140px;
+  font-size: 18px;
+  font-family: gabo drive;
 }
 
-.blackBar{
-    width: 60px;
-    height: 8px;
-    background-color: black;
-    position: relative;
+.blackBar {
+  width: 60px;
+  height: 8px;
+  background-color: black;
+  position: relative;
 }
-
-
 
 /* navbar */
 
 .navbar .container-fluid {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .navbar .logo img {
-    width: auto;
-    height: 60px;
+  width: auto;
+  height: 60px;
 }
-.navbar .logo a{
-    font-size: 0;
+.navbar .logo a {
+  font-size: 0;
 }
 
 .navbar li a {
-    display: inline-block;
-    float: left;
-    color: black;
-    font-size: 18px;
-    font-family: gabo drive;
-    margin-left: 20px;
-    transition: all ease 0.5s;
-    
+  /* display: inline-block; */
+  float: left;
+  color: black;
+  font-size: 18px;
+  font-family: gabo drive;
+  margin-left: 20px;
+  transition: all ease 0.5s;
 }
-.navbar li a:hover{
-    transform: translateY(-2px);
-    color: #EF4323;
+.navbar li a:hover {
+  transform: translateY(-2px);
+  color: #ef4323;
 }
 
 .navbar #rightSection li {
-    margin: 0 20px;
-    font-size: 18px;
-    font-family: gabo drive;
+  margin: 0 20px;
+  font-size: 18px;
+  font-family: gabo drive;
 }
 
 .navbar #rightSection #phoneNum {
-    color: white;
-    font-size: 18px;
-    padding: 8px 0;
+  color: white;
+  font-size: 18px;
+  padding: 8px 0;
 }
-
-
 
 /* heroImg Container */
 
 .heroImg {
-    background-image: url('./img/Group\ 54.png');
-    background-position: center;
-    background-size: cover;
-    height: 750px;
-    position: relative;
+  background-image: url("./img/Group\ 54.png");
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  position: relative;
 }
 .heroImgContainer {
-    margin: 120px 20px 10px 40px;
+  margin: 120px 20px 10px 40px;
 }
 
 .heroImgContainer #detail {
-    font-size: 60px;
-    padding-left: 40px;
+  font-size: 60px;
+  padding-left: 40px;
 }
 
 .heroImgContainer #detail h1 {
-    line-height: 1.1em;
-    margin-top: 50px;
+  line-height: 1.1em;
+  margin-top: 50px;
 }
 
 .heroImgContainer #eventImg {
-    height: 80%;
-    width: auto;
-    margin-top: -135px;
-    margin-left: -40px;
+  height: 80%;
+  width: auto;
+  margin-top: -135px;
+  margin-left: -40px;
 }
 
 /* Top Sales */
 
 .post-slider {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .post-slider .slider-title {
-    margin-top: 60px;
-    text-align: center;
+  margin-top: 60px;
+  text-align: center;
 }
-.post-slider .blackBar{
-    margin: 0 auto;
+.post-slider .blackBar {
+  margin: 0 auto;
 }
-.post-slider h2 span{
-    color: #EF4323;
+.post-slider h2 span {
+  color: #ef4323;
 }
 
 .post-slider .prev {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    font-size: 2em;
-    color: #000;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 2em;
+  color: #000;
+  cursor: pointer;
 }
 
 .post-slider .next {
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    font-size: 2em;
-    color: #000;
-    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 2em;
+  color: #000;
+  cursor: pointer;
 }
 
 .post-slider .post-wrapper {
-    width: 84%;
-    height: 600px;
-    margin: 30px auto;
-    overflow: hidden;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
+  width: 84%;
+  height: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
 }
 
-.post-slider .post-wrapper .post{
-    padding: 15px;
-    display: inline-block;
-   
+.post-slider .post-wrapper .post {
+  padding: 15px;
+  display: inline-block;
 }
-.post-slider .post-wrapper .zoom{
-    border-radius: 45px;
-    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
-    text-align: center;
-    padding: 25px;
-}
-
-
-.slick-track > div{
-    text-align: center;
-}
-.slick-slide > div{
-    transform: scale(.8);
-    background-color: #F3F1E3;
-    transition: .3s cubic-bezier(.4, 0, .2, 1);
-} 
-
-.slick-center .zoom{
-    transform: scale(1);
-    background-color:#FFC81E ;
-    border-radius: 15px;
-    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
-  
+.post-slider .post-wrapper .zoom {
+  border-radius: 45px;
+  box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+  text-align: center;
+  padding: 25px;
 }
 
-.topSales #blackBtn {
-    text-align: center;
-    margin-top: 40px;
+.slick-track > div {
+  text-align: center;
+}
+.slick-slide > div {
+  transform: scale(0.8);
+  background-color: #f3f1e3;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.slick-center .zoom {
+  transform: scale(1);
+  background-color: #ffc81e;
+  border-radius: 15px;
+  box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+}
 
 /* articles */
 /* event articles */
-.articles{
-    margin: 160px auto;
-    text-align: center;
+.articles {
+  margin: 160px auto;
+  text-align: center;
 }
-.articles .eventArticle img{
-    width: 80%;
-    margin: auto auto;
-  
+.articles .eventArticle img {
+  width: 80%;
+  margin: auto auto;
 }
-.eventArticle .blackBar{
-    text-align: left;
-}
-
-
-.articles .eventArticle .content{
-    text-align: left;
-    margin: auto auto;
-    padding-left: 40px;
+.eventArticle .blackBar {
+  text-align: left;
 }
 
-.articles .eventArticle .content span{
-    color: #EF4323;
+.articles .eventArticle .content {
+  text-align: left;
+  margin: auto auto;
+  padding-left: 40px;
 }
-.eventArticle .articleDetail{
-    margin: 40px auto;
+
+.articles .eventArticle .content span {
+  color: #ef4323;
+}
+.eventArticle .articleDetail {
+  margin: 40px auto;
 }
 
 /* blog articles */
-.articles .blogArticle{
-    margin: 160px auto;
-    text-align: center;
+.articles .blogArticle {
+  margin: 160px auto;
+  text-align: center;
 }
 
-.blogArticle img{
-    
-    width: 80%;
-    margin: auto auto;
-   
+.blogArticle img {
+  width: 80%;
+  margin: auto auto;
 }
-.blogArticle .blackBar{
-    text-align: left;
+.blogArticle .blackBar {
+  text-align: left;
 }
-.blogArticle .content{
-    text-align: left;
-    margin: auto auto;
-    padding-left: 100px;
-
+.blogArticle .content {
+  text-align: left;
+  margin: auto auto;
+  padding-left: 100px;
 }
 
-.blogArticle .content span{
-    color: #EF4323;
-    
+.blogArticle .content span {
+  color: #ef4323;
 }
-.blogArticle .articleDetail{
-    margin: 40px auto;
+.blogArticle .articleDetail {
+  margin: 40px auto;
 }
-
-
 
 /* discount Page */
 
 /* navbar discount */
-.content .navbar #phoneNumBlack{
-    color:black;
-    padding: 8px 0;
+#phoneNumBlack {
+  color: black;
+  padding: 8px 0;
 }
 
-
 /* heroImg discount */
-#discountHeroImg{
-    background-image: url('./img/voucher-03.png');
-    background-size: cover;
-    background-position: center;
-    height: 510px;
-    
-    position: relative;
-    margin: 0 auto;
+#discountHeroImg {
+  background-image: url("./img/voucher-03.png");
+  background-size: cover;
+  background-position: center;
+  height: 510px;
+  position: relative;
+  margin: 0 auto;
 }
 /* dicountPage voucher */
 
-.discountDetail #voucherCluster{
-    margin: 80px auto;
-    height: auto;
-    width: 50%;
+.discountDetail #voucherCluster {
+  margin: 80px auto;
+  height: auto;
+  width: 50%;
 }
-.discountDetail .voucherDetail .detail p{
-    font-size: 14px;
+.discountDetail .voucherDetail .detail p {
+  font-size: 14px;
 }
-.discountDetail .voucherDetail .lDrawing img{
-    margin: 0 auto;
-    height: auto;
-    width: 50%;
-
+.discountDetail .voucherDetail .lDrawing img {
+  margin: 0 auto;
+  height: auto;
+  width: 50%;
 }
-.discountDetail .voucherDetail .rDrawing img{
-    margin: 0 auto;
-    height: auto;
-    width: 40%;
-
+.discountDetail .voucherDetail .rDrawing img {
+  margin: 0 auto;
+  height: auto;
+  width: 40%;
 }
 /* discountPage event */
-.discountDetail .discountEvent{
-    margin: 120px auto;
+.discountDetail .discountEvent {
+  margin: 120px auto;
 }
-.discountEvent img{
-    margin: 0 auto;
-    height: auto;
-    width: 70%;
+.discountEvent img {
+  margin: 0 auto;
+  height: auto;
+  width: 70%;
 }
-.discountEvent .detail{
-   background-image: url('./img/dialogBgd.png');
-   background-size: 100% auto;
-   right:10px;
-   background-repeat: no-repeat;
-   
+.discountEvent .detail {
+  background-image: url("./img/dialogBgd.png");
+  background-size: 100% auto;
+  right: 10px;
+  background-repeat: no-repeat;
 }
 .discountEvent .title {
-    margin-left: 100px;
-    margin-top:20px;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
-.discountEvent p{
-    margin-top: 30px;
-    margin-left: 100px;
-
+.discountEvent p {
+  margin-top: 30px;
+  margin-left: 100px;
 }
 
 /* Menu Page */
-.pageTitle{
-    background-image: url('./img/titleBgd.png');
-    background-size: cover;
-    height: 120px;
-    width:100%;
-    margin-top: 10px;
+.pageTitle {
+  background-image: url("./img/titleBgd.png");
+  background-size: cover;
+  height: 120px;
+  width: 100%;
+  margin-top: 10px;
 }
-.pageTitle h4{
-    text-align: center;
-    padding-top: 20px;
-  
+.pageTitle h4 {
+  text-align: center;
+  padding-top: 20px;
 }
-.menu .row{
-    margin: 100px 40px;
+.menu .row {
+  margin: 100px 40px;
 }
-.menu .zoom{
-    border-radius: 15px;
-    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
-    text-align: center;
-    background-color: #F3F1E3;
-    padding: 50px;
-    margin: 30px 50px;
-}
-
-/* About Page */ 
-
-.storeInfo{
-    margin: 100px auto 0;
-}
-.storeInfo img{
-    margin: 0 auto;
-    height: 60%;
-    width: auto;
-}
-.storeInfo p{
-    padding-top: 40px;
+.menu .zoom {
+  border-radius: 15px;
+  box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;
+  text-align: center;
+  background-color: #f3f1e3;
+  padding: 50px;
+  margin: 30px 50px;
 }
 
-.aboutFooter .container-fluid{
-    margin-top: -100px;
+/* About Page */
+
+.storeInfo {
+  margin: 100px auto 0;
+}
+.storeInfo img {
+  margin: 0 auto;
+  height: 60%;
+  width: auto;
+}
+.storeInfo p {
+  padding-top: 40px;
 }
 
+.aboutFooter .container-fluid {
+  margin-top: -100px;
+}
 
 /* Contact Page */
- .contactForm{
-    margin: 80px auto 80px 300px;
-    
-    
+.contactForm {
+  margin: 80px auto 80px 300px;
 }
-.contactForm > div{
-    margin-top:30px
+.contactForm > div {
+  margin-top: 30px;
 }
-.contactForm input{
-    width: 650px;
-    background-color: #F3F1E3;
-    border-radius: 25px;
-    border: 6px solid #F3F1E3;
-    height: 50px;
-    outline: none;
+.contactForm input {
+  width: 650px;
+  background-color: #f3f1e3;
+  border-radius: 25px;
+  border: 6px solid #f3f1e3;
+  height: 50px;
+  outline: none;
 }
-.contactForm button{
-    margin: 30px auto;
-    
+.contactForm button {
+  margin: 30px auto;
 }
-.contactForm  textarea{
-    width: 650px;
-    background-color: #F3F1E3;
-    height: 300px;
-    border-radius: 25px;
-    border: 6px solid #F3F1E3;
+.contactForm textarea {
+  width: 650px;
+  background-color: #f3f1e3;
+  height: 300px;
+  border-radius: 25px;
+  border: 6px solid #f3f1e3;
 }
 /* footer */
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
-footer .container-fluid{
-    background-color: #F3F1E3;
-
+footer .container-fluid {
+  background-color: #f3f1e3;
 }
-footer .container-fluid .fOrangeBar{
-    margin: 50px auto;
-    width: 60px;
-    height: 10px;
-    background-color: #EF4323;
-    position: relative;
-}
-
-footer .container-fluid .fBlackBar{
-    margin: 50px auto;
-    width: 60px;
-    height: 10px;
-    background-color: black;
-    position: relative;
-    
+footer .container-fluid .fOrangeBar {
+  margin: 50px auto;
+  width: 60px;
+  height: 10px;
+  background-color: #ef4323;
+  position: relative;
 }
 
-footer .dishes{
-    margin: 100px 40px;
+footer .container-fluid .fBlackBar {
+  margin: 50px auto;
+  width: 60px;
+  height: 10px;
+  background-color: black;
+  position: relative;
 }
-footer .fTitle{
-    font-family: gabo drive;
+
+footer .dishes {
+  margin: 100px 40px;
 }
-footer .info img{
-    width: 80%;
-    height: auto;
+footer .fTitle {
+  font-family: gabo drive;
 }
-footer .info > .row{
-    text-align: left;
-    margin: 20px 40px;
+footer .info img {
+  width: 80%;
+  height: auto;
+}
+footer .info > .row {
+  text-align: left;
+  margin: 20px 40px;
 }
 footer .info p {
-    text-align: left;
+  text-align: left;
 }
-footer .info .emailForm input{
-    margin-top: 15px;
-    margin-bottom: 20px;
-    width: 370px;
-    border: 3px solid #EF4323;
-    border-radius: 25px;
-    background-color: #F3F1E3;
-    
+footer .info .emailForm input {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  width: 370px;
+  border: 3px solid #ef4323;
+  border-radius: 25px;
+  background-color: #f3f1e3;
 }
-footer .info .emailForm button{
-    width: 370px;
-    color: #F3F1E3;
+footer .info .emailForm button {
+  width: 370px;
+  color: #f3f1e3;
 }
 footer .info .openHour {
-    text-align: left;
-    margin: 0 auto;
+  text-align: left;
+  margin: 0 auto;
 }
 
-
-footer .icons .lOrangeBar{
-    left: 30px;
-    width: 380px;
-    height: 3px;
-    background-color:#EF4323;
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 40px;
-    
-    
+footer .icons .lOrangeBar {
+  left: 30px;
+  width: 380px;
+  height: 3px;
+  background-color: #ef4323;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-right: 40px;
 }
 
 footer .icons a {
-    display: inline-block;
-    text-align: center;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    margin: 0 15px;
-    transition: all ease 0.5s;
+  display: inline-block;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 15px;
+  transition: all ease 0.5s;
 }
 footer .icons a:hover {
-    transform: translateY(-10px);
-   
-    
+  transform: translateY(-10px);
 }
-footer .iconD{
-    margin: 0 auto;
-    display: inline-block;
+footer .iconD {
+  margin: 0 auto;
+  display: inline-block;
 }
 
-footer .icons .rOrangeBar{
-    right: 30px;
-    width: 380px;
-    height: 3px;
-    background-color:#EF4323;
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 40px;
+footer .icons .rOrangeBar {
+  right: 30px;
+  width: 380px;
+  height: 3px;
+  background-color: #ef4323;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
-
 
 footer p {
-    text-align: center;
-    margin-top: 15px;
-    
+  text-align: center;
+  margin-top: 15px;
 }
-footer .container-fluid img{
-    width: 140%;
-    height: auto;
+footer .container-fluid img {
+  width: 140%;
+  height: auto;
 }
 
 /* footer discountPage */
 
-#dFooter .container-fluid{
-    margin-top: 60px;
+#dFooter .container-fluid {
+  margin-top: 60px;
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+}
+
+/* Mobile */
+@media (max-width: 500px) {
 }
