@@ -493,11 +493,3 @@ footer .container-fluid img {
 #dFooter .container-fluid {
   margin-top: 60px;
 }
-
-/* Tablets and under */
-@media (max-width: 768px) {
-}
-
-/* Mobile */
-@media (max-width: 500px) {
-}

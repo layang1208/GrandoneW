@@ -1,106 +1,224 @@
 /* footer */
 @import "config";
+%barstyle {
+  margin: 50px auto;
+  width: 60px;
+  height: 10px;
+
+  position: relative;
+}
 footer {
   text-align: center;
-}
-
-footer .container-fluid {
-  background-color: $terColor;
-}
-footer .container-fluid .fOrangeBar {
-  margin: 50px auto;
-  width: 60px;
-  height: 10px;
-  background-color: $priColor;
-  position: relative;
-}
-
-footer .container-fluid .fBlackBar {
-  margin: 50px auto;
-  width: 60px;
-  height: 10px;
-  background-color: $blackColor;
-  position: relative;
-}
-
-footer .dishes {
-  margin: 100px 40px;
-}
-footer .fTitle {
-  font-family: $priFont;
-}
-footer .info img {
-  width: 80%;
-  height: auto;
-}
-footer .info > .row {
-  text-align: left;
-  margin: 20px 40px;
-}
-footer .info p {
-  text-align: left;
-}
-footer .info .emailForm input {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  width: 370px;
-  border: 3px solid $priColor;
-  border-radius: 25px;
-  background-color: $terColor;
-}
-footer .info .emailForm button {
-  width: 370px;
-  color: $terColor;
-}
-footer .info .openHour {
-  text-align: left;
-  margin: 0 auto;
-}
-
-footer .icons .lOrangeBar {
-  left: 30px;
-  width: 380px;
-  height: 3px;
-  background-color: $priColor;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-right: 40px;
-}
-
-footer .icons a {
-  display: inline-block;
-  text-align: center;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  margin: 0 15px;
-  transition: all ease 0.5s;
-}
-footer .icons a:hover {
-  transform: translateY(-10px);
-}
-footer .iconD {
-  margin: 0 auto;
-  display: inline-block;
-}
-
-footer .icons .rOrangeBar {
-  right: 30px;
-  width: 380px;
-  height: 3px;
-  background-color: $priColor;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-footer p {
-  text-align: center;
-  margin-top: 15px;
-}
-footer .container-fluid img {
-  width: 140%;
-  height: auto;
+  .container-fluid {
+    background-color: $terColor;
+    #claim {
+      text-align: center;
+      margin-top: 15px;
+    }
+    img {
+      width: 140%;
+      height: auto;
+    }
+    .dishImage {
+      margin: 100px 40px;
+    }
+    .fOrangeBar {
+      @extend %barstyle;
+      background-color: $priColor;
+    }
+    .fBlackBar {
+      @extend %barstyle;
+      background-color: $blackColor;
+    }
+    .fTitle {
+      font-family: $priFont;
+    }
+    .info {
+      .col2 {
+        padding-left: 50px;
+      }
+      img {
+        width: 80%;
+        height: auto;
+      }
+      > .row {
+        text-align: left;
+        margin: 20px 40px;
+      }
+      p {
+        text-align: left;
+        font-size: 15px;
+      }
+      .emailForm {
+        padding-left: 60px;
+        input {
+          margin: 20px 0;
+          width: 300px;
+          border: 3px solid $priColor;
+          border-radius: 18px;
+          background-color: $terColor;
+        }
+        button {
+          width: 300px;
+          color: $terColor;
+        }
+      }
+      .openHour {
+        text-align: left;
+        margin: 0 auto;
+      }
+    }
+    .icons {
+      a {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin: 0 15px;
+        transition: all ease 0.5s;
+      }
+      a:hover {
+        transform: translateY(-10px);
+      }
+      .iconOrangeBar {
+        width: 300px;
+        height: 3px;
+        background-color: $priColor;
+        display: inline-block;
+        margin-top: 15px;
+      }
+      .iconSource {
+        margin: 0 auto;
+        display: inline-block;
+      }
+    }
+    @media (max-width: 991px) {
+      .info {
+        .emailForm {
+          input,
+          button {
+            width: 90%;
+          }
+          input {
+            height: 40px;
+          }
+        }
+        h3 {
+          font-size: 22px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      .icons {
+        a {
+          width: 35px;
+          height: 35px;
+        }
+        .iconOrangeBar {
+          width: 150px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .info {
+        .emailForm {
+          position: relative;
+          margin-bottom: 40px;
+          margin-left: -45px;
+          input,
+          button {
+            width: 90%;
+          }
+          input {
+            height: 40px;
+          }
+        }
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 10px;
+        }
+      }
+      .icons {
+        a {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    @media (max-width: 621px) {
+      h3 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 8px;
+      }
+      .icons {
+        .iconOrangeBar {
+          width: 120px;
+        }
+        h3 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 8px;
+        }
+      }
+    }
+    @media (max-width: 596px) {
+      .info {
+        .emailForm {
+          position: relative;
+          margin-bottom: 40px;
+          margin-left: -45px;
+          input,
+          button {
+            width: 90%;
+            height: 30px;
+          }
+          input {
+            height: 40px;
+          }
+        }
+      }
+      .icons {
+        a {
+          width: 20px;
+          height: 20px;
+          margin: 0 10px;
+        }
+        .iconOrangeBar {
+          width: 100px;
+          margin-top: 10px;
+        }
+      }
+    }
+    @media (max-width: 567px) {
+      .icons {
+        a {
+          width: 16px;
+          height: 16px;
+        }
+        .iconOrangeBar {
+          width: 80px;
+          margin-top: 10px;
+        }
+      }
+    }
+    @media (max-width: 530px) {
+      .icons {
+        a {
+          width: 14px;
+          height: 14px;
+          margin: 0 7px;
+        }
+        .iconOrangeBar {
+          width: 25px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
 }

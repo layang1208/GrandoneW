@@ -5,6 +5,11 @@
   .container-fluid {
     margin-left: 40px;
   }
+  .navbar-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
   .logo {
     img {
       width: auto;
@@ -16,7 +21,6 @@
   }
   li {
     a {
-      /* display: inline-block; */
       float: left;
       color: $blackColor;
       font-size: $quaFontSize;
@@ -31,19 +35,161 @@
   }
 
   #rightSection {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 15px;
     li {
-      margin: 0 20px;
       font-size: $quaFontSize;
       font-family: $priFont;
     }
     #phoneNum {
       color: $whiteColor;
-      font-size: $quaFontSize;
-      padding: 8px 0;
+    }
+    button {
+      margin-left: 10px;
     }
   }
   #phoneNumBlack {
     color: black;
     padding: 8px 0;
   }
+  .menu-btn {
+    color: $blackColor;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    z-index: 999;
+    li {
+      a {
+        /* display: inline-block; */
+        float: left;
+        color: $blackColor;
+        font-size: $mTerFontSize;
+        font-family: $priFont;
+        margin-left: 20px;
+        transition: all ease 0.5s;
+      }
+      a:hover {
+        transform: translateY(-2px);
+        color: $priColor;
+      }
+    }
+    #rightSection {
+      margin-left: -150px;
+      li {
+        margin: 0 20px;
+        font-size: $mTerFontSize;
+        font-family: $priFont;
+      }
+      #phoneNum {
+        color: $blackColor;
+        padding: 8px 0;
+      }
+      button {
+        margin-left: -20px;
+      }
+    }
+    .menu-btn {
+      display: block;
+      color: $blackColor;
+      font-size: 25px;
+      cursor: pointer;
+      /* specify elements that have a position value other than static */
+      z-index: 999;
+      margin-right: 35px;
+    }
+    .menu-btn i.active:before {
+      /* font awesome close window icon  */
+      content: "\f00d";
+    }
+    .navbar-nav {
+      position: fixed;
+      background-color: $priColor;
+      height: 100vh;
+      width: 100%;
+      right: -50%;
+      left: 100%;
+      top: 0;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 0.3s ease;
+
+      li {
+        display: block;
+        a {
+          display: inline-block;
+          margin-top: 10px;
+          font-size: 25px;
+        }
+      }
+    }
+    .navbar-nav.active {
+      right: 0;
+      left: 400px;
+      text-indent: 50px;
+      text-align: left;
+      margin-left: 50px;
+    }
+  }
+}
+@media (max-width: 603px) {
+  .navbar {
+    #rightSection {
+      margin-left: -60px;
+      li {
+        margin: 0 20px;
+        font-size: $mQuiFontSize;
+        font-family: $priFont;
+      }
+      #phoneNum {
+        display: none;
+        color: $blackColor;
+        padding: 8px 0;
+      }
+      button {
+        margin-left: -30px;
+        font-size: $mQuiFontSize;
+        height: 20px;
+        width: 80px;
+        display: none;
+      }
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-top: -20px;
+      img {
+        width: auto;
+        height: 40px;
+      }
+    }
+    .navbar-nav {
+      position: fixed;
+      background-color: $priColor;
+      height: 100vh;
+      width: 100%;
+      right: -100%;
+      left: 100%;
+      top: 0;
+      text-align: center;
+      padding-top: 80px;
+      transition: all 1s ease;
+    }
+    .navbar-nav.active {
+      right: 0px;
+      left: 50%;
+      text-indent: 30px;
+      text-align: left;
+      margin-left: 50px;
+    }
+  }
+}
+@media (max-width: 440px) {
 }

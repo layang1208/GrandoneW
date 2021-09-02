@@ -1,54 +1,110 @@
 @import "config";
+%articleTem {
+  position: relative;
+  margin: 160px auto;
+  text-align: center;
+  img {
+    width: 80%;
+    margin: auto auto;
+  }
+
+  .content {
+    text-align: left;
+    margin: auto auto;
+    padding-left: 80px;
+    span {
+      color: $priColor;
+    }
+  }
+  .articleDetail {
+    margin: 40px auto;
+  }
+}
 /* articles */
-
-/* event articles */
 .articles {
-  margin: 160px auto;
-  text-align: center;
-}
-.articles .eventArticle img {
-  width: 80%;
-  margin: auto auto;
-}
-.eventArticle .blackBar {
-  text-align: left;
+  .eventArticle {
+    @extend %articleTem;
+  }
+  .blogArticle {
+    @extend %articleTem;
+  }
 }
 
-.articles .eventArticle .content {
-  text-align: left;
-  margin: auto auto;
-  padding-left: 40px;
+@media (max-width: 911px) {
+  .articles {
+    .eventArticle,
+    .blogArticle {
+      img {
+        // padding-top: 30px;
+        // padding-left: 30px;
+      }
+    }
+    h2 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .articles {
+    .eventArticle,
+    .blogArticle {
+      img {
+        width: 60%;
+      }
+      .content {
+        text-align: center;
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+        .blackBar {
+          position: relative;
+          margin-left: 35%;
+        }
+      }
+    }
+    .blogArticle {
+      img {
+        margin-top: 30px;
+      }
+    }
+  }
 }
 
-.articles .eventArticle .content span {
-  color: $priColor;
+@media (max-width: 587px) {
+  .articles {
+    margin-top: -220px;
+    .eventArticle,
+    .blogArticle {
+      .content {
+      }
+    }
+    .blogArticle {
+      margin-top: -150px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 }
-.eventArticle .articleDetail {
-  margin: 40px auto;
-}
-
-/* blog articles */
-.articles .blogArticle {
-  margin: 160px auto;
-  text-align: center;
-}
-
-.blogArticle img {
-  width: 80%;
-  margin: auto auto;
-}
-.blogArticle .blackBar {
-  text-align: left;
-}
-.blogArticle .content {
-  text-align: left;
-  margin: auto auto;
-  padding-left: 100px;
-}
-
-.blogArticle .content span {
-  color: $priColor;
-}
-.blogArticle .articleDetail {
-  margin: 40px auto;
+@media (max-width: 463px) {
+  .eventArticle,
+  .blogArticle {
+    img {
+      width: 100%;
+      padding-top: 40px;
+      padding-left: 20px;
+    }
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+  }
 }

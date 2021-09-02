@@ -1,22 +1,53 @@
-@import "../scss/config";
+@import "config";
 
-%btn {
+%priBtn {
   border-radius: 20px;
   padding: 0 10px;
   height: 40px;
   width: 140px;
-  font-size: 18px;
+  font-size: $quaFontSize;
   font-family: $priFont;
 }
 
 .blackBtn {
-  @extend %btn;
+  @extend %priBtn;
   color: $whiteColor;
   background-color: $blackColor;
 }
 
 .detailBtn {
-  @extend %btn;
+  @extend %priBtn;
   color: $whiteColor;
   background-color: $priColor;
+}
+
+@media (max-width: 991px) {
+  %secBtn {
+    border-radius: 20px;
+    padding: 0 8px;
+    height: 30px;
+    width: 120px;
+    font-size: $mTerFontSize;
+    font-family: $priFont;
+  }
+  .blackBtn {
+    @extend %secBtn;
+  }
+  .detailBtn {
+    @extend %secBtn;
+  }
+}
+// @media (max-width: 683px) {
+//   .detailBtn {
+//     font-size: 50%;
+//     height: 80%;
+//     width: auto%;
+//   }
+// }
+@media (max-width: 595px) {
+  .detailBtn {
+    font-size: 80%;
+    height: 80%;
+    width: 20%;
+  }
 }

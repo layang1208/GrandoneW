@@ -4,7 +4,6 @@
 %sequenceStyle {
   position: absolute;
   top: 50%;
-  left: 30px;
   font-size: 2em;
   color: $blackColor;
   cursor: pointer;
@@ -13,49 +12,42 @@
 .post-slider {
   position: relative;
   text-align: center;
-}
-
-.post-slider .slider-title {
-  margin-top: 60px;
-  text-align: center;
-}
-.post-slider .blackBar {
-  margin: 0 auto;
-}
-// .post-slider .blackBtn {
-//   text-align: center;
-//   margin-top: 40px;
-// }
-.post-slider h2 span {
-  color: $priColor;
-}
-
-.post-slider .prev {
-  @extend %sequenceStyle;
-}
-
-.post-slider .next {
-  @extend %sequenceStyle;
-}
-
-.post-slider .post-wrapper {
-  width: 84%;
-  height: 600px;
-  margin: 30px auto;
-  overflow: hidden;
-  text-align: center;
-  padding: 10px 0px 10px 0px;
-}
-
-.post-slider .post-wrapper .post {
-  padding: 15px;
-  display: inline-block;
-}
-.post-slider .post-wrapper .zoom {
-  border-radius: 45px;
-  box-shadow: 1rem 1rem 1rem -1rem $boxShadowColor;
-  text-align: center;
-  padding: 25px;
+  .slider-title {
+    margin-top: 60px;
+    text-align: center;
+  }
+  .blackBar {
+    margin: 0 auto;
+  }
+  h2 span {
+    color: $priColor;
+  }
+  .prev {
+    @extend %sequenceStyle;
+    left: 30px;
+  }
+  .next {
+    @extend %sequenceStyle;
+    right: 30px;
+  }
+  .post-wrapper {
+    width: 84%;
+    height: 600px;
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    .post {
+      padding: 15px;
+      display: inline-block;
+    }
+    .zoom {
+      border-radius: 45px;
+      box-shadow: 1rem 1rem 1rem -1rem $boxShadowColor;
+      text-align: center;
+      padding: 25px;
+    }
+  }
 }
 
 .slick-track > div {
@@ -72,4 +64,61 @@
   background-color: $secColor;
   border-radius: 15px;
   box-shadow: 1rem 1rem 1rem -1rem $boxShadowColor;
+}
+
+@media (max-width: 1030px) {
+  .post-slider {
+    h2 {
+      font-size: $terFontSize;
+    }
+  }
+}
+@media (max-width: 789px) {
+  .post-slider {
+    h2 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 12px;
+    }
+
+    .prev {
+      margin-top: -100px;
+    }
+    .next {
+      margin-top: -100px;
+    }
+    .blackBtn {
+    }
+  }
+}
+@media (max-width: 683px) {
+  .post-slider {
+    h2 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 12px;
+    }
+    .detailBtn {
+      font-size: 60%;
+      height: 90%;
+      width: 30%;
+    }
+    .post-wrapper {
+      .zoom {
+        border-radius: 25px;
+        box-shadow: 1rem 1rem 1rem -1rem $boxShadowColor;
+        text-align: center;
+        padding: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 595px) {
+  .post-slider {
+    .blackBtn {
+      margin-top: -280px;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 // hero image container
+@import "config";
 .heroImg {
   background-image: url("../img/Group\ 54.png");
   background-position: center;
@@ -8,21 +9,99 @@
 }
 .heroImgContainer {
   margin: 120px 20px 10px 40px;
+  #detail {
+    font-size: $priFontSize;
+    padding-left: 40px;
+    h1 {
+      line-height: 1.1em;
+      margin-top: 50px;
+    }
+  }
+  #eventImg {
+    height: 80%;
+    width: auto;
+    margin-top: -135px;
+    margin-left: -40px;
+  }
 }
 
-.heroImgContainer #detail {
-  font-size: 60px;
-  padding-left: 40px;
+/* Tablets and under */
+@media (max-width: 1032px) {
+  .heroImgContainer {
+    #detail {
+      padding-left: 40px;
+      h1 {
+        font-size: $secFontSize;
+        line-height: 1.1em;
+        margin-top: 10px;
+      }
+    }
+    #eventImg {
+      height: 60%;
+      width: auto;
+    }
+  }
 }
 
-.heroImgContainer #detail h1 {
-  line-height: 1.1em;
-  margin-top: 50px;
+/* Mobile */
+@media (max-width: 816px) {
+  .heroImgContainer {
+    #detail {
+      padding-left: 40px;
+      h1 {
+        font-size: $terFontSize;
+        line-height: 1.1em;
+        margin-top: 10px;
+      }
+    }
+  }
 }
 
-.heroImgContainer #eventImg {
-  height: 80%;
-  width: auto;
-  margin-top: -135px;
-  margin-left: -40px;
+@media (max-width: 766px) {
+  .heroImgContainer {
+    margin: 120px 20px 10px 40px;
+    #eventImg {
+      height: 50%;
+      width: auto;
+    }
+  }
+}
+@media (max-width: 679px) {
+  .heroImgContainer {
+    margin: 120px 20px 10px 40px;
+    #eventImg {
+      height: 40%;
+      width: auto;
+      margin-top: -70px;
+      margin-left: -6px;
+    }
+  }
+}
+
+@media (max-width: 454px) {
+  .heroImg {
+    height: 500px;
+  }
+  .heroImgContainer {
+    margin: 80px 20px 10px 40px;
+    #detail {
+      padding-left: 40px;
+      h1 {
+        font-size: $mSecFontSize;
+        line-height: 1.1em;
+      }
+      button {
+        font-size: $mQuiFontSize;
+        height: 20px;
+        width: 80px;
+        margin-top: -90px;
+      }
+    }
+    #eventImg {
+      height: 35%;
+      width: auto;
+      margin-top: -100px;
+      margin-left: -18px;
+    }
+  }
 }
