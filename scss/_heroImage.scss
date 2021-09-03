@@ -69,6 +69,9 @@
 @media (max-width: 679px) {
   .heroImgContainer {
     margin: 120px 20px 10px 40px;
+    #detail {
+      margin-top: 30px;
+    }
     #eventImg {
       height: 40%;
       width: auto;
@@ -78,7 +81,7 @@
   }
 }
 
-@media (max-width: 454px) {
+@media (max-width: 573px) {
   .heroImg {
     height: 500px;
   }
@@ -86,8 +89,9 @@
     margin: 80px 20px 10px 40px;
     #detail {
       padding-left: 40px;
+      margin-top: 20px;
       h1 {
-        font-size: $mSecFontSize;
+        font-size: 25px;
         line-height: 1.1em;
       }
       button {
@@ -102,6 +106,23 @@
       width: auto;
       margin-top: -100px;
       margin-left: -18px;
+    }
+  }
+}
+@media (max-width: 476px) {
+  .heroImgContainer {
+    #detail {
+      margin-top: 20px;
+      h1 {
+        font-size: 18px;
+        line-height: 1.1em;
+      }
+    }
+    #eventImg {
+      height: 25%;
+      width: auto;
+      margin-top: -60px;
+      margin-left: -8px;
     }
   }
 }

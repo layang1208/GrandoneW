@@ -11,6 +11,7 @@ footer {
   text-align: center;
   .container-fluid {
     background-color: $terColor;
+    padding-right: 0px;
     #claim {
       text-align: center;
       margin-top: 15px;
@@ -81,7 +82,8 @@ footer {
         transform: translateY(-10px);
       }
       .iconOrangeBar {
-        width: 300px;
+        padding: 0;
+        width: 180px;
         height: 3px;
         background-color: $priColor;
         display: inline-block;

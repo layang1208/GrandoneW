@@ -11,3 +11,19 @@
   padding: 50px;
   margin: 30px 50px;
 }
+.menu {
+  @media (max-width: 594px) {
+    .detailBtn {
+      font-size: 80%;
+      height: 80%;
+      width: 70%;
+    }
+  }
+  @media (max-width: 594px) {
+    .detailBtn {
+      font-size: 60%;
+      height: 80%;
+      width: 80%;
+    }
+  }
+}

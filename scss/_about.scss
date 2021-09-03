@@ -1,17 +1,66 @@
 /* About Page */
-
-.storeInfo {
-  margin: 100px auto 0;
-}
-.storeInfo img {
-  margin: 0 auto;
-  height: 60%;
-  width: auto;
-}
-.storeInfo p {
-  padding-top: 40px;
-}
-
-.aboutFooter .container-fluid {
-  margin-top: -100px;
+.aboutPage {
+  .storeInfo {
+    margin: 50px auto 0;
+    .imgContainer,
+    .detail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    img {
+      // padding-left: 50px;
+      height: 60%;
+      width: auto;
+    }
+    p {
+      padding-top: 40px;
+      padding-right: 60px;
+    }
+    // @media (max-width: 960px) {
+    //   .detail {
+    //     p {
+    //       font-size: 14px;
+    //     }
+    //     img {
+    //       height: 60%;
+    //       width: auto;
+    //     }
+    //   }
+    // }
+  }
+  @media (max-width: 991px) {
+    .storeInfo {
+      img {
+        height: 400px;
+        width: auto;
+      }
+      .detail {
+        margin-top: 40px;
+        p {
+          position: relative;
+          font-size: 12px;
+          text-align: center;
+          padding: 30px 50px;
+        }
+      }
+    }
+    .aboutFooter .container-fluid {
+      margin-top: 100px;
+    }
+  }
+  @media (max-width: 587px) {
+    .storeInfo {
+      img {
+        height: 300px;
+        width: auto;
+      }
+      .detail {
+        p {
+          font-size: 8.5px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

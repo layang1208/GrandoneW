@@ -153,6 +153,9 @@
         color: $blackColor;
         padding: 8px 0;
       }
+      #phoneNumBlack {
+        display: none;
+      }
       button {
         margin-left: -30px;
         font-size: $mQuiFontSize;
