@@ -14,3 +14,8 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GRANDONE }}'
           projectId: grandone
+      - name: install firebase
+      run: npm i firebase-tools -g
+      - name: deploy
+      run: firebase deploy --token ${}
+firebase deploy --token "$FIREBASE_TOKEN"
