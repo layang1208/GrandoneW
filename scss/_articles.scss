@@ -10,27 +10,32 @@
 
   .content {
     text-align: left;
-    margin: auto auto;
-    padding-left: 80px;
+    padding-right: 20px;
     span {
       color: $priColor;
     }
   }
   .articleDetail {
-    margin: 40px auto;
+    margin: 20px auto;
+  }
+  .image {
+    padding-right: 0;
   }
 }
 /* articles */
 .articles {
   .eventArticle {
     @extend %articleTem;
+    padding-left: 60px;
   }
   .blogArticle {
     @extend %articleTem;
+    padding-left: 80px;
   }
   @media (max-width: 767px) {
     .eventArticle,
     .blogArticle {
+      padding-left: 0px;
       img {
         width: 60%;
       }
@@ -39,9 +44,10 @@
         padding-top: 60px;
         padding-left: 0px;
         padding-right: 0px;
+
         .blackBar {
           position: relative;
-          margin-left: 35%;
+          left: 45%;
         }
       }
     }
@@ -58,29 +64,31 @@
         // padding-top: 30px;
         // padding-left: 30px;
       }
-    }
-    h2 {
-      font-size: 35px;
-    }
-    p {
-      font-size: 15px;
+      h2 {
+        font-size: 35px;
+      }
+      p {
+        font-size: 15px;
+      }
     }
   }
   @media (max-width: 587px) {
     margin-top: -220px;
     .eventArticle,
     .blogArticle {
-      .content {
+      padding-left: 0px;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 12px;
+      }
+      .detailBtn {
+        margin-top: -40px;
       }
     }
     .blogArticle {
       margin-top: -150px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-    p {
-      font-size: 12px;
     }
   }
   @media (max-width: 463px) {
@@ -89,7 +97,7 @@
     }
     p {
       font-size: 8px;
-      padding: 0 30px;
+      padding: 0 25px;
     }
   }
 }

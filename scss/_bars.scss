@@ -3,4 +3,8 @@
   height: 8px;
   background-color: black;
   position: relative;
+  @media (max-width: 578px) {
+    width: 40px;
+    height: 6px;
+  }
 }

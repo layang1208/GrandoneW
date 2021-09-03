@@ -1,5 +1,5 @@
-@import "config";
 @import "utilities";
+@import "config";
 
 @import "button";
 @import "bars";
@@ -15,9 +15,3 @@
 @import "menu";
 @import "contact";
 @import "about";
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}

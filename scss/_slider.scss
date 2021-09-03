@@ -12,6 +12,7 @@
 .post-slider {
   position: relative;
   text-align: center;
+
   .slider-title {
     margin-top: 60px;
     text-align: center;
@@ -76,7 +77,7 @@
 @media (max-width: 789px) {
   .post-slider {
     h2 {
-      font-size: 25px;
+      font-size: 35px;
     }
     p {
       font-size: 12px;
@@ -95,7 +96,7 @@
 @media (max-width: 683px) {
   .post-slider {
     h2 {
-      font-size: 18px;
+      font-size: 30px;
     }
     p {
       font-size: 12px;
@@ -118,7 +119,12 @@
 @media (max-width: 595px) {
   .post-slider {
     .blackBtn {
-      margin-top: -280px;
+      margin-top: -250px;
     }
+  }
+}
+@media (max-width: 465px) {
+  .post-slider .blackBtn {
+    margin-top: -300px;
   }
 }
