@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Gabo Drive";
+  src: url("GaboDrive.eot");
+  src: local("Gabo Drive"), local("GaboDrive"),
+    url("GaboDrive.eot?#iefix") format("embedded-opentype"),
+    url("GaboDrive.woff") format("woff"),
+    url("GaboDrive.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 // Color
 $whiteColor: #fff;
 $blackColor: #000;
@@ -7,7 +17,7 @@ $terColor: #f3f1e3;
 $boxShadowColor: #a0a0a033;
 
 // Font
-$priFont: gabo drive;
+$priFont: "Gabo Drive";
 $secFont: Times, serif;
 $priFontSize: 70px;
 $secFontSize: 60px;
