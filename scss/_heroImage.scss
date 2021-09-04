@@ -26,10 +26,10 @@
 }
 
 /* Tablets and under */
-@media (max-width: 1032px) {
+@media (max-width: 1131px) {
   .heroImgContainer {
     #detail {
-      padding-left: 40px;
+      padding-left: 30px;
       h1 {
         font-size: $secFontSize;
         line-height: 1.1em;
@@ -44,10 +44,13 @@
 }
 
 /* Mobile */
-@media (max-width: 816px) {
+@media (max-width: 871px) {
+  .heroImg {
+    height: 580px;
+  }
   .heroImgContainer {
     #detail {
-      padding-left: 40px;
+      padding-left: 30px;
       h1 {
         font-size: $terFontSize;
         line-height: 1.1em;
@@ -66,30 +69,30 @@
     }
   }
 }
-@media (max-width: 679px) {
-  .heroImgContainer {
-    margin: 120px 20px 10px 40px;
-    #detail {
-      margin-top: 30px;
-    }
-    #eventImg {
-      height: 40%;
-      width: auto;
-      margin-top: -70px;
-      margin-left: -6px;
-    }
-  }
-}
+// @media (max-width: 679px) {
+//   .heroImgContainer {
+//     margin: 120px 20px 10px 40px;
+//     #detail {
+//       margin-top: 30px;
+//     }
+//     #eventImg {
+//       height: 40%;
+//       width: auto;
+//       margin-top: -70px;
+//       margin-left: -6px;
+//     }
+//   }
+// }
 
-@media (max-width: 573px) {
+@media (max-width: 679px) {
   .heroImg {
-    height: 500px;
+    height: 430px;
   }
   .heroImgContainer {
     margin: 80px 20px 10px 40px;
     #detail {
-      padding-left: 40px;
-      margin-top: 20px;
+      padding-left: 30px;
+      margin-top: 10px;
       h1 {
         font-size: 25px;
         line-height: 1.1em;
@@ -109,7 +112,15 @@
     }
   }
 }
+@media (max-width: 520px) {
+  .heroImg {
+    height: 450px;
+  }
+}
 @media (max-width: 476px) {
+  .heroImg {
+    height: 380px;
+  }
   .heroImgContainer {
     #detail {
       margin-top: 20px;
@@ -123,6 +134,24 @@
       width: auto;
       margin-top: -60px;
       margin-left: -8px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .heroImg {
+    height: 330px;
+  }
+  .heroImgContainer {
+    #detail {
+      margin-top: -25px;
+      h1 {
+        font-size: 15px;
+      }
+    }
+    #eventImg {
+      height: 20%;
+      width: auto;
+      margin-top: -80px;
     }
   }
 }

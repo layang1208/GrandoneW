@@ -76,6 +76,7 @@
     margin-top: -220px;
     .eventArticle,
     .blogArticle {
+      margin-top: -150px;
       padding-left: 0px;
       h2 {
         font-size: 25px;
@@ -84,20 +85,29 @@
         font-size: 12px;
       }
       .detailBtn {
-        margin-top: -40px;
+        font-size: 80%;
+        height: 15%;
+        width: 15%;
       }
-    }
-    .blogArticle {
-      margin-top: -150px;
     }
   }
   @media (max-width: 463px) {
-    h2 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 8px;
-      padding: 0 25px;
+    .eventArticle,
+    .blogArticle {
+      margin-top: -150px;
+      padding-left: 0px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 8px;
+        padding: 0 25px;
+      }
+      .detailBtn {
+        font-size: 60%;
+        // height: 20%;
+        // width: 20%;
+      }
     }
   }
 }
