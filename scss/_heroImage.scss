@@ -86,7 +86,7 @@
 
 @media (max-width: 679px) {
   .heroImg {
-    height: 430px;
+    height: 400px;
   }
   .heroImgContainer {
     margin: 80px 20px 10px 40px;
@@ -119,11 +119,11 @@
 }
 @media (max-width: 476px) {
   .heroImg {
-    height: 380px;
+    height: 350px;
   }
   .heroImgContainer {
     #detail {
-      margin-top: 20px;
+      margin-top: -5px;
       h1 {
         font-size: 18px;
         line-height: 1.1em;
@@ -132,26 +132,24 @@
     #eventImg {
       height: 25%;
       width: auto;
-      margin-top: -60px;
+      margin-top: -80px;
       margin-left: -8px;
     }
   }
 }
 @media (max-width: 400px) {
   .heroImg {
-    height: 330px;
+    height: 310px;
   }
   .heroImgContainer {
     #detail {
-      margin-top: -25px;
+      margin-top: -20px;
       h1 {
         font-size: 15px;
       }
     }
     #eventImg {
       height: 20%;
-      width: auto;
-      margin-top: -80px;
     }
   }
 }
