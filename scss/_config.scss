@@ -1,10 +1,7 @@
 @font-face {
-  font-family: "Gabo Drive";
-  src: url("GaboDrive.eot");
-  src: local("Gabo Drive"), local("GaboDrive"),
-    url("GaboDrive.eot?#iefix") format("embedded-opentype"),
-    url("GaboDrive.woff") format("woff"),
-    url("GaboDrive.ttf") format("truetype");
+  font-family: "gabo_driveregular";
+  src: url("gabodrive-webfont.woff2") format("woff2"),
+    url("gabodrive-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
