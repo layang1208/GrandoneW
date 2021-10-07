@@ -25,20 +25,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    margin-left: -30px;
   }
 }
 
 /* Tablets and under */
 @media (max-width: 1131px) {
   .heroImg {
-    height: 700px;
+    height: 900px;
   }
   .heroImgContainer {
     #detail {
       h1 {
         font-size: $terFontSize;
+      }
+      button {
+        margin-top: -50px;
       }
     }
   }
@@ -47,13 +48,13 @@
 /* Mobile */
 @media (max-width: 871px) {
   .heroImg {
-    height: 580px;
+    height: 700px;
   }
   .heroImgContainer {
     #detail {
       #eventImg {
-        margin-top: -50px;
-        margin-left: -30px;
+        // margin-top: -50px;
+        // margin-left: -30px;
       }
     }
   }
@@ -61,10 +62,15 @@
 
 @media (max-width: 679px) {
   .heroImg {
+    height: 600px;
   }
   .heroImgContainer {
+    .row {
+      margin-top: -40px;
+    }
     #detail {
-      margin-top: 40px;
+      margin-top: 60px;
+      align-items: flex-start;
       h1 {
         font-size: $mPriFontSize;
       }
@@ -76,8 +82,8 @@
       }
     }
     #eventImg {
-      margin-top: -10px;
-      margin-left: -10px;
+      // margin-top: -10px;
+      // margin-left: -10px;
     }
   }
 }
@@ -93,20 +99,22 @@
       }
     }
     #eventImg {
+      margin-top: -20px;
     }
   }
 }
 @media (max-width: 400px) {
   .heroImg {
+    height: 450px;
   }
   .heroImgContainer {
     #detail {
       h1 {
+        font-size: 15px;
       }
     }
     #eventImg {
-      transform: scale(1.01);
-      margin-top: -20px;
+      margin-top: -30px;
     }
   }
 }
