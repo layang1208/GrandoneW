@@ -90,7 +90,7 @@
 
 @media (max-width: 476px) {
   .heroImg {
-    height: 500px;
+    height: 480px;
   }
   .heroImgContainer {
     #detail {
@@ -105,13 +105,12 @@
 }
 @media (max-width: 400px) {
   .heroImg {
-    height: 450px;
+    height: 420px;
   }
+
   .heroImgContainer {
-    #detail {
-      h1 {
-        font-size: 15px;
-      }
+    .row {
+      margin-top: -60px;
     }
     #eventImg {
       margin-top: -30px;
