@@ -5,10 +5,9 @@
   background-position: center;
   background-size: cover;
   height: 1050px;
-  position: relative;
+  position: absolute;
 }
 .heroImgContainer {
-  margin: 120px 20px 10px 40px;
   #detail {
     font-size: $priFontSize;
     display: flex;
@@ -38,8 +37,6 @@
         font-size: $terFontSize;
       }
     }
-    #eventImg {
-    }
   }
 }
 
@@ -50,13 +47,7 @@
   }
   .heroImgContainer {
     #detail {
-      // h1 {
-      //   font-size: $terFontSize;
-      //   line-height: 1.1em;
-      //   margin-top: 10px;
-      // }
       #eventImg {
-        width: auto;
         margin-top: -50px;
         margin-left: -30px;
       }
@@ -65,8 +56,6 @@
 }
 
 @media (max-width: 679px) {
-  .heroImg {
-  }
   .heroImgContainer {
     #detail {
       margin-top: 40px;
@@ -106,8 +95,6 @@
   }
 }
 @media (max-width: 400px) {
-  .heroImg {
-  }
   .heroImgContainer {
     #detail {
       h1 {
